@@ -10,7 +10,7 @@ import svgwrite
 from mrcp.panel import Panel
 from mrcp.config import *
 from mrcp.curve import *
-from mrcp.turnout import *
+from mrcp.turnouts import *
 from mrcp.ladder import *
 
 print ("MRCP")

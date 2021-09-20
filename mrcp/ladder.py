@@ -1,10 +1,10 @@
 from mrcp.curve import OutCurve
-from mrcp.turnout import HalfTurnout, LadderStep
+from mrcp.turnouts import HalfTurnout, LadderStep
 from mrcp.panel import *
 from mrcp.points import *
 
 class Ladder(BaseElement):
-    def __init__(self, pos=(0, 0), color="Black", up=True, right=True, vertical=False) -> None:
+    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False) -> None:
         super().__init__(pos=pos, color=color)
         self._up = up
         self._right = right

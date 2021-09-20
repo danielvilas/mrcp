@@ -1,10 +1,11 @@
-from mrcp.points import pointC, pointH
+from mrcp.points import Point, pointC, pointH
 from mrcp.config import GRID_SIZE
 import svgwrite
 from svgwrite.extensions import Inkscape
+from mrcp.config import *
 
 class BaseElement(object):
-    def __init__(self,pos=(0,0),color="black") -> None:
+    def __init__(self,pos=(0,0),color=COLOR_TRACK_DEFAULT) -> None:
         super().__init__()
         self._pos=pos
         self._color=color
@@ -51,7 +52,7 @@ class Panel(object):
 
         path = 'M {} 0 L 0 0 0 {}'.format(GRID_SIZE*4, GRID_SIZE*4)
         patternBig.add(self._dwg.rect(
-            size=(20, 20), fill=patternSmall.get_paint_server()))
+            size=(GRID_SIZE*4, GRID_SIZE*4), fill=patternSmall.get_paint_server()))
         patternBig.add(self._dwg.path(d=path, stroke=svgwrite.rgb(
             0, 0, 200, '%'), stroke_width=0.2, fill="none"))
         layer.add(self._dwg.rect(size=size, fill="white"))
@@ -80,3 +81,7 @@ class Panel(object):
         circle = self._dwg.circle(center=point, r=0.5, stroke="red",
                             stroke_width=0.2, fill="yellow")
         self._lLayer.add(circle)
+
+
+    def markPoint(self,point:Point):
+        self.markC(point.toCoords())

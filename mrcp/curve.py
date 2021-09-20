@@ -2,7 +2,7 @@ from mrcp.panel import *
 from mrcp.points import *
 
 class Curve(BaseElement):
-    def __init__(self, pos=(0,0), color="Black",radius=2,left=True, up=True) -> None:
+    def __init__(self, pos=(0,0), color=COLOR_TRACK_DEFAULT,radius=2,left=True, up=True) -> None:
         super().__init__(pos=pos, color=color)
         self._radius=radius
         self._left=left
@@ -29,20 +29,20 @@ class Curve(BaseElement):
         sa=pointV(self._pos,(dx*delta1,dsy))
         pb=pointC(self._pos,(dx*delta2,dy*delta1))
         sb=pointH(self._pos,(dsx,dy*delta1))
-        line=self._panel._dwg.line(start=sa,end=pa,stroke=self._color, stroke_width=5)
+        line=self._panel._dwg.line(start=sa,end=pa,stroke=self._color, stroke_width=TRACK_SIZE)
         self._panel._tLayer.add(line)
-        line=self._panel._dwg.line(start=pa,end=pb,stroke=self._color, stroke_width=5)
+        line=self._panel._dwg.line(start=pa,end=pb,stroke=self._color, stroke_width=TRACK_SIZE)
         self._panel._tLayer.add(line)
-        line=self._panel._dwg.line(start=pb,end=sb,stroke=self._color, stroke_width=5)
+        line=self._panel._dwg.line(start=pb,end=sb,stroke=self._color, stroke_width=TRACK_SIZE)
         self._panel._tLayer.add(line)
-        circle=self._panel._dwg.circle(center=pa,r=5/2,stroke="none", fill=self._color)
+        circle=self._panel._dwg.circle(center=pa,r=TRACK_SIZE/2,stroke="none", fill=self._color)
         self._panel._tLayer.add(circle)
-        circle=self._panel._dwg.circle(center=pb,r=5/2,stroke="none", fill=self._color)
+        circle=self._panel._dwg.circle(center=pb,r=TRACK_SIZE/2,stroke="none", fill=self._color)
         self._panel._tLayer.add(circle)
 
 
 class OutCurve(BaseElement):
-    def __init__(self, pos=(0,0), color="Black",right=True, up=True, vertical=False) -> None:
+    def __init__(self, pos=(0,0), color=COLOR_TRACK_DEFAULT,right=True, up=True, vertical=False) -> None:
         super().__init__(pos=pos, color=color)
         self._right=right
         self._up=up
@@ -77,11 +77,11 @@ class OutCurve(BaseElement):
                 thPointH = pointH(pos=pos, delta=(2, dy))
                 thEnd = pointH(pos=pos, delta=(4, dy))
 
-        line = dwg.line(start=thPointH, end=thEnd, stroke=self._color, stroke_width=5)
+        line = dwg.line(start=thPointH, end=thEnd, stroke=self._color, stroke_width=TRACK_SIZE)
         layer.add(line)
         line = dwg.line(start=thHalfPointH, end=thPointH,
-                    stroke=self._color, stroke_width=5)
+                    stroke=self._color, stroke_width=TRACK_SIZE)
         layer.add(line)
-        circle = dwg.circle(center=thPointH, r=5/2, fill=self._color)
+        circle = dwg.circle(center=thPointH, r=TRACK_SIZE/2, fill=self._color)
         layer.add(circle)
 

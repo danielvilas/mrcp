@@ -1,12 +1,11 @@
+from mrcp.track import Track
 import mrcp
-import svgwrite
-from svgwrite.extensions import Inkscape
 
 
 from mrcp.points import *
 
 
-def hSegment(dwg, pos=(0, 0), color="black", length=1, layer=None):
+def hSegment(dwg, pos=(0, 0), color=COLOR_TRACK_DEFAULT, length=1, layer=None):
     color = "yellow"
     if layer == None:
         layer = dwg
@@ -18,22 +17,6 @@ def hSegment(dwg, pos=(0, 0), color="black", length=1, layer=None):
     return
 
 
-def vSegment(dwg, pos=(0, 0), color="black", length=1, layer=None):
-    color = "yellow"
-    if layer == None:
-        layer = dwg
-    start = pointV(pos=pos)
-    end = pointV(pos=pos, delta=(0, 4*length))
-
-    line = dwg.line(start=start, end=end, stroke=color, stroke_width=5)
-    layer.add(line)
-    return
-
-
-
-
-
-
 def myPanel(name):
 
     panel = mrcp.Panel(name, 200, 120)
@@ -42,10 +25,10 @@ def myPanel(name):
 
 
 # Up Yard, tracks
-    hSegment(dwg, pos=(8, 2), layer=tLayer, color="gray", length=2)
-    hSegment(dwg, pos=(20, 2), layer=tLayer, color="gray", length=4)
-    hSegment(dwg, pos=(16, 4), layer=tLayer, color="gray", length=5)
-    hSegment(dwg, pos=(12, 6), layer=tLayer, color="gray", length=3)
+    panel.add(Track(Point(8,2),color="gray",end=Point(15,2)))
+    panel.add(Track(Point(20,2),color="gray",end=Point(35,2)))
+    panel.add(Track(Point(16,4),color="gray",end=Point(35,4)))
+    panel.add(Track(Point(12,6),color="gray",end=Point(23,6)))
 # Up Yard, ladder
 
     # turn= mrcp.HalfTurnout(color="cyan",up=True,right=True)
@@ -65,10 +48,10 @@ def myPanel(name):
 
 
 # Down Station, tracks
-    hSegment(dwg, pos=(8, 21), layer=tLayer, color="gray", length=6)
-    hSegment(dwg, pos=(8, 19), layer=tLayer, color="gray", length=5)
-    hSegment(dwg, pos=(28, 17), layer=tLayer, color="gray", length=1)
-    hSegment(dwg, pos=(16, 17), layer=tLayer, color="gray", length=2)
+    panel.add(Track(Point(8,21),color="gray",end=Point(31,21)))
+    panel.add(Track(Point(8,19),color="gray",end=Point(27,19)))
+    panel.add(Track(Point(28,17),color="gray",end=Point(31,17)))
+    panel.add(Track(Point(16,17),color="gray",end=Point(23,17)))
 # Down Station, exit track
 
     turn= mrcp.HalfTurnout(color="gray",up=True,right=False)
@@ -93,14 +76,15 @@ def myPanel(name):
     curve = mrcp.Curve(radius=1, color="gray", left=False, up=True)
     panel.add(curve, pos=(32, 11))
     curve = mrcp.Curve(radius=1, color="gray", left=False, up=False)
+
+
     panel.add(curve, pos=(32, 14))
-    panel.paint()
 
 
 # Close curve
-    st = pointV((35, 12))
-    se = pointV((35, 12), (0, 2))
-    tLayer.add(dwg.line(start=st, end=se, stroke="gray", stroke_width=5))
+    panel.add(Track(Point(35,12),color="gray",end=Point(35,13)))
+
+    panel.paint()
     dwg.save()
 
 

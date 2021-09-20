@@ -1,4 +1,4 @@
-from mrcp.turnout import CurveTurnOut_2_3
+from mrcp.turnouts import CurveTurnOut_2_3
 import mrcp
 
 
