@@ -1,5 +1,5 @@
 import mrcp
-
+from mrcp.points import *
 
 def myPanel(name, endContra=False):
     panel = mrcp.Panel(name, 215, 120)
@@ -7,7 +7,7 @@ def myPanel(name, endContra=False):
     ladder = mrcp.Ladder(color="gray", up=True, right=True,vertical=False)
     ladder.addStep()
     ladder.addStep()
-    panel.add(ladder,(1,10))
+    panel.add(ladder,Point(1,10))
     ladder.addStep()
     if endContra:
         ladder.endContraTurnout()
@@ -15,7 +15,7 @@ def myPanel(name, endContra=False):
     ladder = mrcp.Ladder(color="gray", up=False, right=True,vertical=False)
     ladder.addStep()
     ladder.addStep()
-    panel.add(ladder,(1,13))
+    panel.add(ladder,Point(1,13))
     ladder.addStep()
     if endContra:
         ladder.endContraTurnout()
@@ -23,7 +23,7 @@ def myPanel(name, endContra=False):
     ladder = mrcp.Ladder(color="gray", up=True, right=False,vertical=False)
     ladder.addStep()
     ladder.addStep()
-    panel.add(ladder,(38,10))
+    panel.add(ladder,Point(38,10))
     ladder.addStep()
     if endContra:
         ladder.endContraTurnout()
@@ -31,7 +31,7 @@ def myPanel(name, endContra=False):
     ladder = mrcp.Ladder(color="gray", up=False, right=False,vertical=False)
     ladder.addStep()
     ladder.addStep()
-    panel.add(ladder,(38,13))
+    panel.add(ladder,Point(38,13))
     ladder.addStep()
     if endContra:
         ladder.endContraTurnout()

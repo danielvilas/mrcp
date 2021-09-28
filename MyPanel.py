@@ -4,19 +4,6 @@ import mrcp
 
 from mrcp.points import *
 
-
-def hSegment(dwg, pos=(0, 0), color=COLOR_TRACK_DEFAULT, length=1, layer=None):
-    color = "yellow"
-    if layer == None:
-        layer = dwg
-    start = pointH(pos=pos)
-    end = pointH(pos=pos, delta=(4*length, 0))
-
-    line = dwg.line(start=start, end=end, stroke=color, stroke_width=5)
-    layer.add(line)
-    return
-
-
 def myPanel(name):
 
     panel = mrcp.Panel(name, 200, 120)
@@ -38,13 +25,13 @@ def myPanel(name):
     # turn= mrcp.HalfTurnout(color="cyan",up=False,right=False)
     # panel.add(turn,(16,2))
     ladder = mrcp.Ladder(color="gray",up=True,right=True)
-    panel.add(ladder,(8,6))
+    panel.add(ladder,Point(8,6))
     ladder.addStep()
     ladder.endContraTurnout()
 
 # Up Yard, service track
     turn= mrcp.Turnout(color="gray",up=False,right=True)
-    panel.add(turn,(24, 6))
+    panel.add(turn,Point(24, 6))
 
 
 # Down Station, tracks
@@ -55,9 +42,9 @@ def myPanel(name):
 # Down Station, exit track
 
     turn= mrcp.HalfTurnout(color="gray",up=True,right=False)
-    panel.add(turn,(28,19))
+    panel.add(turn,Point(28,19))
     turn= mrcp.HalfTurnout(color="gray",up=False,right=True)
-    panel.add(turn,(24, 17))
+    panel.add(turn,Point(24, 17))
 
 
 # curve
@@ -65,20 +52,20 @@ def myPanel(name):
 
 
     curve=mrcp.CurveTurnOut_2_3(color="gray",up=False,right=True,vertical=True)
-    panel.add(curve,pos=(2,12))
+    panel.add(curve,pos=Point(2,12))
     curve=mrcp.CurveTurnOut_2_3(color="gray",up=False,right=False,vertical=True)
-    panel.add(curve,pos=(37,12))
+    panel.add(curve,pos=Point(37,12))
 
     curve = mrcp.Curve(radius=2, color="gray", left=True, up=True)
-    panel.add(curve, pos=(7, 11))
+    panel.add(curve, pos=Point(7, 11))
     curve = mrcp.Curve(radius=2, color="gray", left=False, up=True)
-    panel.add(curve, pos=(32, 11))
+    panel.add(curve, pos=Point(32, 11))
     curve = mrcp.Curve(radius=1, color="gray", left=False, up=True)
-    panel.add(curve, pos=(32, 11))
+    panel.add(curve, pos=Point(32, 11))
     curve = mrcp.Curve(radius=1, color="gray", left=False, up=False)
 
 
-    panel.add(curve, pos=(32, 14))
+    panel.add(curve, pos=Point(32, 14))
 
 
 # Close curve

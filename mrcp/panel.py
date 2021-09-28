@@ -1,11 +1,13 @@
+from typing import Tuple
 from mrcp.points import Point, pointC, pointH
 from mrcp.config import GRID_SIZE
 import svgwrite
 from svgwrite.extensions import Inkscape
 from mrcp.config import *
+import sys
 
 class BaseElement(object):
-    def __init__(self,pos=(0,0),color=COLOR_TRACK_DEFAULT) -> None:
+    def __init__(self,pos=Point(0,0),color=COLOR_TRACK_DEFAULT) -> None:
         super().__init__()
         self._pos=pos
         self._color=color
@@ -13,6 +15,7 @@ class BaseElement(object):
 
     def attach(self,panel):
         self._panel=panel
+        panel.register(self)
     
     def paint(self):
         pass
@@ -35,8 +38,12 @@ class Panel(object):
         self._dwg.add(self._cLayer)
         self._lLayer = self._inkscape.layer(label="Led", locked=True)
         self._dwg.add(self._lLayer)
+        self._oLayer = self._inkscape.layer(label="Outs", locked=True)
+        self._dwg.add(self._oLayer)
         self._elements=[]
         self._mark=False
+        self._size=(width, height)
+        self._paintable=[]
 
     def grid(self, size):
         layer = self._inkscape.layer(label="GridLayer", locked=True)
@@ -58,22 +65,44 @@ class Panel(object):
         layer.add(self._dwg.rect(size=size, fill="white"))
         layer.add(self._dwg.rect(size=size, fill=patternBig.get_paint_server()))
 
+    def register(self, element:BaseElement):
+        if element in self._paintable:
+            print("twice register of",element)
+            return
+        self._paintable.append(element)
+        # if element in self._elements:
+        #     print("Register a element")
+        # else:
+        #     print("Register a sub-element")
+
+    
     def add(self, element:BaseElement, pos=None):
         self._elements.append(element)
         element.attach(self)
         if pos != None:
+            if isinstance(pos,Tuple):
+                frame = sys._getframe(1)
+                print("Converting Tuple to Pos: ", pos," ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
+                x,y=pos
+                pos= Point(x,y)
             element._pos=pos
             if self._mark: self.mark(pos)
 
     def paint(self):
         for element in self._elements:
             element.paint()
+        self._oLayer.add(self._dwg.rect(size=self._size, fill="none",stroke=COLOR_CUT,stroke_width=0.2))
+        
     
     def markStart(self,mark=True):
         self._mark=mark
 
-    def mark(self,point=(0,9)):
-        point=pointC(point)
+    def mark(self,point=Point(0,9)):
+        if isinstance(point, Tuple):
+            print("Converting Tuple to Pos: ", point," ",sys._getframe(1).f_code.co_name)
+            x,y=point
+            point= Point(x,y)
+        point=point.toCoords()
         circle = self._dwg.circle(center=point, r=0.5, stroke="red",
                             stroke_width=0.2, fill="yellow")
         self._lLayer.add(circle)
