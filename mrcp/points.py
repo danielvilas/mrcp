@@ -69,6 +69,15 @@ class Point(object):
         elif place=='r':
             ay+=GRID_SIZE/2
             ax+=GRID_SIZE
+        elif place=='bl':
+            ay+=GRID_SIZE
+        elif place=='br':
+            ay+=GRID_SIZE
+            ax+=GRID_SIZE
+        elif place=='tl':
+            ay+=0
+        elif place=='tr':
+            ax+=GRID_SIZE
         xf=(self._x)*GRID_SIZE+ax
         yf=(self._y)*GRID_SIZE+ay
         return (xf,yf)

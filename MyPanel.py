@@ -1,5 +1,6 @@
 from mrcp.track import Track
 import mrcp
+from mrcp.led import Led
 
 
 from mrcp.points import *
@@ -70,6 +71,40 @@ def myPanel(name):
 
 # Close curve
     panel.add(Track(Point(35,12),color="gray",end=Point(35,13)))
+
+# Occupancy leds
+
+    panel.add(Led(color="yellow"),Point(4,7,'bl'))
+    panel.add(Led(color="yellow"),Point(5,18,'l'))
+    panel.add(Led(color="yellow"),Point(3,20,'c'))
+    panel.add(Led(color="yellow"),Point(11,21,'r'))
+    panel.add(Led(color="yellow"),Point(11,19,'r'))
+    panel.add(Led(color="yellow"),Point(19,21,'r'))
+    panel.add(Led(color="yellow"),Point(19,19,'r'))
+    panel.add(Led(color="yellow"),Point(19,17,'r'))
+    panel.add(Led(color="yellow"),Point(27,21,'r'))
+    panel.add(Led(color="yellow"),Point(25,19,'r'))
+    panel.add(Led(color="yellow"),Point(29,17,'r'))
+    
+    panel.add(Led(color="yellow"),Point(35,18,'l'))
+    panel.add(Led(color="yellow"),Point(36,20,'c'))
+    panel.add(Led(color="yellow"),Point(34,16,'tl'))
+    panel.add(Led(color="yellow"),Point(34,10,'tl'))
+    panel.add(Led(color="yellow"),Point(36,8,'tl'))
+
+    panel.add(Led(color="yellow"),Point(29,6,'r'))
+    panel.add(Led(color="yellow"),Point(29,8,'r'))
+
+    panel.add(Led(color="yellow"),Point(33,4,'r'))
+    panel.add(Led(color="yellow"),Point(33,2,'r'))
+    panel.add(Led(color="yellow"),Point(27,4,'r'))
+    panel.add(Led(color="yellow"),Point(27,2,'r'))
+    panel.add(Led(color="yellow"),Point(19,6,'r'))
+    panel.add(Led(color="yellow"),Point(19,4,'r'))
+    panel.add(Led(color="yellow"),Point(19,2,'r'))
+
+    panel.add(Led(color="yellow"),Point(13,6,'r'))
+    panel.add(Led(color="yellow"),Point(11,2,'r'))
 
     panel.paint()
     dwg.save()
