@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="12.0cm"
+   version="1.1"
+   viewBox="0,0,200,120"
+   width="20.0cm"
+   id="svg476"
+   sodipodi:docname="panel_print.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata480">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     id="namedview478"
+     showgrid="false"
+     inkscape:zoom="1.7396354"
+     inkscape:cx="377.95276"
+     inkscape:cy="226.77165"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g386" />
+  <defs
+     id="defs10">
+    <pattern
+       height="5"
+       id="id1"
+       patternUnits="userSpaceOnUse"
+       width="5">
+      <path
+         d="M 5 0 L 0 0 0 5"
+         fill="none"
+         stroke="rgb(0%,0%,100%)"
+         stroke-width="0.1"
+         id="path2" />
+    </pattern>
+    <pattern
+       height="20"
+       id="id2"
+       patternUnits="userSpaceOnUse"
+       width="20">
+      <rect
+         fill="url(#id1) none"
+         height="20"
+         width="20"
+         x="0"
+         y="0"
+         id="rect5" />
+      <path
+         d="M 20 0 L 0 0 0 20"
+         fill="none"
+         stroke="rgb(0%,0%,100%)"
+         stroke-width="0.2"
+         id="path7" />
+    </pattern>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Track"
+     sodipodi:insensitive="1"
+     id="g172">
+    <polyline
+       fill="blueviolet"
+       points="80,10.5 40,10.5 40,14.5 80,14.5 80,10.5"
+       stroke="none"
+       id="polyline18" />
+    <polyline
+       fill="blueviolet"
+       points="195,10.5 100,10.5 100,14.5 195,14.5 195,10.5"
+       stroke="none"
+       id="polyline20" />
+    <polyline
+       fill="blueviolet"
+       points="195,20.5 80,20.5 80,24.5 195,24.5 195,20.5"
+       stroke="none"
+       id="polyline22" />
+    <polyline
+       fill="gray"
+       points="120,30.5 60,30.5 60,34.5 120,34.5 120,30.5"
+       stroke="none"
+       id="polyline24" />
+    <polyline
+       fill="blueviolet"
+       points="59.10557280900009,25.711145618000167 49.10557280900009,30.711145618000167 50.89442719099991,34.28885438199983 60.89442719099991,29.288854381999833 59.10557280900009,25.711145618000167"
+       stroke="none"
+       id="polyline26" />
+    <polyline
+       fill="gray"
+       points="60,30.5 40,30.5 40,34.5 60,34.5 60,30.5"
+       stroke="none"
+       id="polyline28" />
+    <circle
+       cx="50"
+       cy="32.5"
+       fill="white"
+       r="3.0"
+       id="circle30" />
+    <polyline
+       fill="blueviolet"
+       points="80,20.5 70,20.5 70,24.5 80,24.5 80,20.5"
+       stroke="none"
+       id="polyline32" />
+    <polyline
+       fill="blueviolet"
+       points="79.10557280900008,15.711145618000169 59.10557280900009,25.711145618000167 60.89442719099991,29.288854381999833 80.89442719099992,19.288854381999833 79.10557280900008,15.711145618000169"
+       stroke="none"
+       id="polyline34" />
+    <circle
+       cx="70"
+       cy="22.5"
+       fill="white"
+       r="3.0"
+       id="circle36" />
+    <polyline
+       fill="blueviolet"
+       points="80.89442719099992,19.288854381999833 90.89442719099992,14.288854381999831 89.10557280900008,10.711145618000169 79.10557280900008,15.711145618000169 80.89442719099992,19.288854381999833"
+       stroke="none"
+       id="polyline38" />
+    <polyline
+       fill="blueviolet"
+       points="80,10.5 100,10.5 100,14.5 80,14.5 80,10.5"
+       stroke="none"
+       id="polyline40" />
+    <circle
+       cx="90"
+       cy="12.5"
+       fill="white"
+       r="3.0"
+       id="circle42" />
+    <polyline
+       fill="sandybrown"
+       points="140.89442719099992,35.71114561800017 130.89442719099992,30.711145618000167 129.10557280900008,34.28885438199983 139.10557280900008,39.28885438199983 140.89442719099992,35.71114561800017"
+       stroke="none"
+       id="polyline44" />
+    <polyline
+       fill="gray"
+       points="140,30.5 120,30.5 120,34.5 140,34.5 140,30.5"
+       stroke="none"
+       id="polyline46" />
+    <circle
+       cx="130"
+       cy="32.5"
+       fill="white"
+       r="3.0"
+       id="circle48" />
+    <circle
+       cx="150"
+       cy="42.5"
+       fill="sandybrown"
+       r="2.0"
+       id="circle50" />
+    <polyline
+       fill="sandybrown"
+       points="160,40.5 150,40.5 150,44.5 160,44.5 160,40.5"
+       stroke="none"
+       id="polyline52" />
+    <polyline
+       fill="sandybrown"
+       points="150.89442719099992,40.71114561800017 140.89442719099992,35.71114561800017 139.10557280900008,39.28885438199983 149.10557280900008,44.28885438199983 150.89442719099992,40.71114561800017"
+       stroke="none"
+       id="polyline54" />
+    <polyline
+       fill="gray"
+       points="160,30.5 140,30.5 140,34.5 160,34.5 160,30.5"
+       stroke="none"
+       id="polyline56" />
+    <polyline
+       fill="gray"
+       points="160,105.5 40,105.5 40,109.5 160,109.5 160,105.5"
+       stroke="none"
+       id="polyline58" />
+    <polyline
+       fill="gray"
+       points="140,95.5 40,95.5 40,99.5 140,99.5 140,95.5"
+       stroke="none"
+       id="polyline60" />
+    <polyline
+       fill="sandybrown"
+       points="160,85.5 140,85.5 140,89.5 160,89.5 160,85.5"
+       stroke="none"
+       id="polyline62" />
+    <polyline
+       fill="sandybrown"
+       points="120,85.5 80,85.5 80,89.5 120,89.5 120,85.5"
+       stroke="none"
+       id="polyline64" />
+    <polyline
+       fill="gray"
+       points="139.10557280900008,94.28885438199983 149.10557280900008,99.28885438199983 150.89442719099992,95.71114561800017 140.89442719099992,90.71114561800017 139.10557280900008,94.28885438199983"
+       stroke="none"
+       id="polyline66" />
+    <polyline
+       fill="gray"
+       points="140,95.5 160,95.5 160,99.5 140,99.5 140,95.5"
+       stroke="none"
+       id="polyline68" />
+    <circle
+       cx="150"
+       cy="97.5"
+       fill="white"
+       r="3.0"
+       id="circle70" />
+    <polyline
+       fill="sandybrown"
+       points="140.89442719099992,90.71114561800017 130.89442719099992,85.71114561800017 129.10557280900008,89.28885438199983 139.10557280900008,94.28885438199983 140.89442719099992,90.71114561800017"
+       stroke="none"
+       id="polyline72" />
+    <polyline
+       fill="sandybrown"
+       points="140,85.5 120,85.5 120,89.5 140,89.5 140,85.5"
+       stroke="none"
+       id="polyline74" />
+    <circle
+       cx="130"
+       cy="87.5"
+       fill="white"
+       r="3.0"
+       id="circle76" />
+    <polyline
+       fill="gray"
+       points="19.288854381999833,79.10557280900008 14.288854381999831,69.10557280900008 10.711145618000169,70.89442719099992 15.711145618000169,80.89442719099992 19.288854381999833,79.10557280900008"
+       stroke="none"
+       id="polyline78" />
+    <polyline
+       fill="gray"
+       points="10.5,80 10.5,60 14.5,60 14.5,80 10.5,80"
+       stroke="none"
+       id="polyline80" />
+    <circle
+       cx="12.5"
+       cy="70"
+       fill="white"
+       r="3.0"
+       id="circle82" />
+    <circle
+       cx="22.5"
+       cy="107.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle84" />
+    <circle
+       cx="30"
+       cy="97.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle86" />
+    <circle
+       cx="12.5"
+       cy="97.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle88" />
+    <circle
+       cx="22.5"
+       cy="90"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle90" />
+    <polyline
+       fill="gray"
+       points="24.288854381999833,89.10557280900008 19.288854381999833,79.10557280900008 15.711145618000169,80.89442719099992 20.711145618000167,90.89442719099992 24.288854381999833,89.10557280900008"
+       stroke="none"
+       id="polyline92" />
+    <polyline
+       fill="gray"
+       points="31.414213562373096,96.08578643762691 23.914213562373096,88.58578643762691 21.085786437626904,91.41421356237309 28.585786437626904,98.91421356237309 31.414213562373096,96.08578643762691"
+       stroke="none"
+       id="polyline94" />
+    <polyline
+       fill="gray"
+       points="40,95.5 30,95.5 30,99.5 40,99.5 40,95.5"
+       stroke="none"
+       id="polyline96" />
+    <polyline
+       fill="gray"
+       points="10.5,97.5 10.5,80 14.5,80 14.5,97.5 10.5,97.5"
+       stroke="none"
+       id="polyline98" />
+    <polyline
+       fill="gray"
+       points="23.914213562373096,106.08578643762691 13.914213562373096,96.08578643762691 11.085786437626904,98.91421356237309 21.085786437626904,108.91421356237309 23.914213562373096,106.08578643762691"
+       stroke="none"
+       id="polyline100" />
+    <polyline
+       fill="gray"
+       points="40,105.5 22.5,105.5 22.5,109.5 40,109.5 40,105.5"
+       stroke="none"
+       id="polyline102" />
+    <polyline
+       fill="gray"
+       points="184.28885438199984,80.89442719099992 189.28885438199984,70.89442719099992 185.71114561800016,69.10557280900008 180.71114561800016,79.10557280900008 184.28885438199984,80.89442719099992"
+       stroke="none"
+       id="polyline104" />
+    <polyline
+       fill="gray"
+       points="185.5,80 185.5,60 189.5,60 189.5,80 185.5,80"
+       stroke="none"
+       id="polyline106" />
+    <circle
+       cx="187.5"
+       cy="70"
+       fill="white"
+       r="3.0"
+       id="circle108" />
+    <circle
+       cx="177.5"
+       cy="107.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle110" />
+    <circle
+       cx="170"
+       cy="97.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle112" />
+    <circle
+       cx="187.5"
+       cy="97.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle114" />
+    <circle
+       cx="177.5"
+       cy="90"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle116" />
+    <polyline
+       fill="gray"
+       points="179.28885438199984,90.89442719099992 184.28885438199984,80.89442719099992 180.71114561800016,79.10557280900008 175.71114561800016,89.10557280900008 179.28885438199984,90.89442719099992"
+       stroke="none"
+       id="polyline118" />
+    <polyline
+       fill="gray"
+       points="171.4142135623731,98.91421356237309 178.9142135623731,91.41421356237309 176.0857864376269,88.58578643762691 168.5857864376269,96.08578643762691 171.4142135623731,98.91421356237309"
+       stroke="none"
+       id="polyline120" />
+    <polyline
+       fill="gray"
+       points="160,95.5 170,95.5 170,99.5 160,99.5 160,95.5"
+       stroke="none"
+       id="polyline122" />
+    <polyline
+       fill="gray"
+       points="185.5,97.5 185.5,80 189.5,80 189.5,97.5 185.5,97.5"
+       stroke="none"
+       id="polyline124" />
+    <polyline
+       fill="gray"
+       points="178.9142135623731,108.91421356237309 188.9142135623731,98.91421356237309 186.0857864376269,96.08578643762691 176.0857864376269,106.08578643762691 178.9142135623731,108.91421356237309"
+       stroke="none"
+       id="polyline126" />
+    <polyline
+       fill="gray"
+       points="160,105.5 177.5,105.5 177.5,109.5 160,109.5 160,105.5"
+       stroke="none"
+       id="polyline128" />
+    <polyline
+       fill="gray"
+       points="10.5,47.5 10.5,60 14.5,60 14.5,47.5 10.5,47.5"
+       stroke="none"
+       id="polyline130" />
+    <polyline
+       fill="gray"
+       points="26.085786437626904,31.085786437626904 11.085786437626904,46.08578643762691 13.914213562373096,48.91421356237309 28.914213562373096,33.91421356237309 26.085786437626904,31.085786437626904"
+       stroke="none"
+       id="polyline132" />
+    <polyline
+       fill="gray"
+       points="40,30.5 27.5,30.5 27.5,34.5 40,34.5 40,30.5"
+       stroke="none"
+       id="polyline134" />
+    <circle
+       cx="12.5"
+       cy="47.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle136" />
+    <circle
+       cx="27.5"
+       cy="32.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle138" />
+    <polyline
+       fill="gray"
+       points="185.5,47.5 185.5,60 189.5,60 189.5,47.5 185.5,47.5"
+       stroke="none"
+       id="polyline140" />
+    <polyline
+       fill="gray"
+       points="171.0857864376269,33.91421356237309 186.0857864376269,48.91421356237309 188.9142135623731,46.08578643762691 173.9142135623731,31.085786437626904 171.0857864376269,33.91421356237309"
+       stroke="none"
+       id="polyline142" />
+    <polyline
+       fill="gray"
+       points="160,30.5 172.5,30.5 172.5,34.5 160,34.5 160,30.5"
+       stroke="none"
+       id="polyline144" />
+    <circle
+       cx="187.5"
+       cy="47.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle146" />
+    <circle
+       cx="172.5"
+       cy="32.5"
+       fill="gray"
+       r="2.0"
+       stroke="none"
+       id="circle148" />
+    <polyline
+       fill="sandybrown"
+       points="175.5,57.5 175.5,60 179.5,60 179.5,57.5 175.5,57.5"
+       stroke="none"
+       id="polyline150" />
+    <polyline
+       fill="sandybrown"
+       points="161.0857864376269,43.91421356237309 176.0857864376269,58.91421356237309 178.9142135623731,56.08578643762691 163.9142135623731,41.08578643762691 161.0857864376269,43.91421356237309"
+       stroke="none"
+       id="polyline152" />
+    <polyline
+       fill="sandybrown"
+       points="160,40.5 162.5,40.5 162.5,44.5 160,44.5 160,40.5"
+       stroke="none"
+       id="polyline154" />
+    <circle
+       cx="177.5"
+       cy="57.5"
+       fill="sandybrown"
+       r="2.0"
+       stroke="none"
+       id="circle156" />
+    <circle
+       cx="162.5"
+       cy="42.5"
+       fill="sandybrown"
+       r="2.0"
+       stroke="none"
+       id="circle158" />
+    <polyline
+       fill="sandybrown"
+       points="175.5,72.5 175.5,70 179.5,70 179.5,72.5 175.5,72.5"
+       stroke="none"
+       id="polyline160" />
+    <polyline
+       fill="sandybrown"
+       points="163.9142135623731,88.91421356237309 178.9142135623731,73.91421356237309 176.0857864376269,71.08578643762691 161.0857864376269,86.08578643762691 163.9142135623731,88.91421356237309"
+       stroke="none"
+       id="polyline162" />
+    <polyline
+       fill="sandybrown"
+       points="160,85.5 162.5,85.5 162.5,89.5 160,89.5 160,85.5"
+       stroke="none"
+       id="polyline164" />
+    <circle
+       cx="177.5"
+       cy="72.5"
+       fill="sandybrown"
+       r="2.0"
+       stroke="none"
+       id="circle166" />
+    <circle
+       cx="162.5"
+       cy="87.5"
+       fill="sandybrown"
+       r="2.0"
+       stroke="none"
+       id="circle168" />
+    <polyline
+       fill="sandybrown"
+       points="175.5,70 175.5,60 179.5,60 179.5,70 175.5,70"
+       stroke="none"
+       id="polyline170" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Cut"
+     id="g386"
+     style="display:inline">
+    <circle
+       cx="50"
+       cy="32.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle174" />
+    <circle
+       cx="60"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle180" />
+    <circle
+       cx="60"
+       cy="27.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle184" />
+    <circle
+       cx="70"
+       cy="22.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle188" />
+    <circle
+       cx="80"
+       cy="17.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle194" />
+    <circle
+       cx="80"
+       cy="22.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle198" />
+    <circle
+       cx="90"
+       cy="12.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle202" />
+    <circle
+       cx="80"
+       cy="12.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle208" />
+    <circle
+       cx="130"
+       cy="32.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle212" />
+    <circle
+       cx="140"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle218" />
+    <circle
+       cx="140"
+       cy="37.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle222" />
+    <circle
+       cx="150"
+       cy="97.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle226" />
+    <circle
+       cx="140"
+       cy="97.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle232" />
+    <circle
+       cx="140"
+       cy="92.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle236" />
+    <circle
+       cx="130"
+       cy="87.5"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle240" />
+    <circle
+       cx="140"
+       cy="87.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle246" />
+    <circle
+       cx="12.5"
+       cy="70"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle250" />
+    <circle
+       cx="12.5"
+       cy="80"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle256" />
+    <circle
+       cx="17.5"
+       cy="80"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle260" />
+    <circle
+       cx="187.5"
+       cy="70"
+       fill="none"
+       r="3"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle264" />
+    <circle
+       cx="187.5"
+       cy="80"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle270" />
+    <circle
+       cx="182.5"
+       cy="80"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle274" />
+    <circle
+       cx="20"
+       cy="40"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle278" />
+    <circle
+       cx="25"
+       cy="92.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle282" />
+    <circle
+       cx="17.5"
+       cy="102.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle286" />
+    <circle
+       cx="60"
+       cy="107.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle290" />
+    <circle
+       cx="60"
+       cy="97.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle294" />
+    <circle
+       cx="100"
+       cy="107.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle298" />
+    <circle
+       cx="100"
+       cy="97.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle302" />
+    <circle
+       cx="140"
+       cy="107.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle306" />
+    <circle
+       cx="130"
+       cy="97.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle310" />
+    <circle
+       cx="150"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle314" />
+    <circle
+       cx="100"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle318" />
+    <circle
+       cx="70"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle322" />
+    <circle
+       cx="180"
+       cy="40"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle326" />
+    <circle
+       cx="175"
+       cy="92.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle330" />
+    <circle
+       cx="182.5"
+       cy="102.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle334" />
+    <circle
+       cx="100"
+       cy="87.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle338" />
+    <circle
+       cx="150"
+       cy="87.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle342" />
+    <circle
+       cx="170"
+       cy="80"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle346" />
+    <circle
+       cx="170"
+       cy="50"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle350" />
+    <circle
+       cx="150"
+       cy="42.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle354" />
+    <circle
+       cx="177.5"
+       cy="22.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle358" />
+    <circle
+       cx="177.5"
+       cy="12.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle362" />
+    <circle
+       cx="140"
+       cy="22.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle366" />
+    <circle
+       cx="140"
+       cy="12.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle370" />
+    <circle
+       cx="100"
+       cy="22.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle374" />
+    <circle
+       cx="100"
+       cy="12.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle378" />
+    <circle
+       cx="60"
+       cy="12.5"
+       fill="none"
+       r="1.5"
+       stroke="#ff0000"
+       stroke-width="0.2"
+       id="circle382" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Led"
+     sodipodi:insensitive="true"
+     id="g470"
+     style="display:inline">
+    <circle
+       cx="60"
+       cy="32.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle388" />
+    <circle
+       cx="60"
+       cy="27.5"
+       fill="#ffff00"
+       r="1.5"
+       id="circle390" />
+    <circle
+       cx="80"
+       cy="17.5"
+       fill="#ffff00"
+       r="1.5"
+       id="circle392" />
+    <circle
+       cx="80"
+       cy="22.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle394" />
+    <circle
+       cx="80"
+       cy="12.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle396" />
+    <circle
+       cx="140"
+       cy="32.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle398" />
+    <circle
+       cx="140"
+       cy="37.5"
+       fill="#ffff00"
+       r="1.5"
+       id="circle400" />
+    <circle
+       cx="140"
+       cy="97.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle402" />
+    <circle
+       cx="140"
+       cy="92.5"
+       fill="#ffff00"
+       r="1.5"
+       id="circle404" />
+    <circle
+       cx="140"
+       cy="87.5"
+       fill="#00ff00"
+       r="1.5"
+       id="circle406" />
+    <circle
+       cx="12.5"
+       cy="80"
+       fill="#00ff00"
+       r="1.5"
+       id="circle408" />
+    <circle
+       cx="17.5"
+       cy="80"
+       fill="#ffff00"
+       r="1.5"
+       id="circle410" />
+    <circle
+       cx="187.5"
+       cy="80"
+       fill="#00ff00"
+       r="1.5"
+       id="circle412" />
+    <circle
+       cx="182.5"
+       cy="80"
+       fill="#ffff00"
+       r="1.5"
+       id="circle414" />
+    <circle
+       cx="20"
+       cy="40"
+       fill="#f08080"
+       r="1.5"
+       id="circle416" />
+    <circle
+       cx="25"
+       cy="92.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle418" />
+    <circle
+       cx="17.5"
+       cy="102.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle420" />
+    <circle
+       cx="60"
+       cy="107.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle422" />
+    <circle
+       cx="60"
+       cy="97.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle424" />
+    <circle
+       cx="100"
+       cy="107.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle426" />
+    <circle
+       cx="100"
+       cy="97.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle428" />
+    <circle
+       cx="140"
+       cy="107.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle430" />
+    <circle
+       cx="130"
+       cy="97.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle432" />
+    <circle
+       cx="150"
+       cy="32.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle434" />
+    <circle
+       cx="100"
+       cy="32.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle436" />
+    <circle
+       cx="70"
+       cy="32.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle438" />
+    <circle
+       cx="180"
+       cy="40"
+       fill="#f08080"
+       r="1.5"
+       id="circle440" />
+    <circle
+       cx="175"
+       cy="92.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle442" />
+    <circle
+       cx="182.5"
+       cy="102.5"
+       fill="#f08080"
+       r="1.5"
+       id="circle444" />
+    <circle
+       cx="100"
+       cy="87.5"
+       fill="#ffe4e1"
+       r="1.5"
+       id="circle446" />
+    <circle
+       cx="150"
+       cy="87.5"
+       fill="#ffe4e1"
+       r="1.5"
+       id="circle448" />
+    <circle
+       cx="170"
+       cy="80"
+       fill="#ffe4e1"
+       r="1.5"
+       id="circle450" />
+    <circle
+       cx="170"
+       cy="50"
+       fill="#ffe4e1"
+       r="1.5"
+       id="circle452" />
+    <circle
+       cx="150"
+       cy="42.5"
+       fill="#ffe4e1"
+       r="1.5"
+       id="circle454" />
+    <circle
+       cx="177.5"
+       cy="22.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle456" />
+    <circle
+       cx="177.5"
+       cy="12.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle458" />
+    <circle
+       cx="140"
+       cy="22.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle460" />
+    <circle
+       cx="140"
+       cy="12.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle462" />
+    <circle
+       cx="100"
+       cy="22.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle464" />
+    <circle
+       cx="100"
+       cy="12.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle466" />
+    <circle
+       cx="60"
+       cy="12.5"
+       fill="#add8e6"
+       r="1.5"
+       id="circle468" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Outs"
+     sodipodi:insensitive="1"
+     id="g474">
+    <rect
+       fill="none"
+       height="120"
+       stroke="red"
+       stroke-width="0.2"
+       width="200"
+       x="0"
+       y="0"
+       id="rect472" />
+  </g>
+</svg>

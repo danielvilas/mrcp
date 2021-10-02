@@ -3,8 +3,9 @@ from mrcp.points import *
 from .halfturnout import *
  
 class LadderStep(HalfTurnout):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False) -> None:
-        super().__init__(pos=pos, color=color, up=up, right=right, vertical=vertical)
+    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False,closedColor=CLOSED_LED_COLOR,thrownColor=THROWN_LED_COLOR) -> None:
+        #Interchange the color
+        super().__init__(pos=pos, color=color, up=up, right=right, vertical=vertical,closedColor=thrownColor,thrownColor=closedColor)
 
     def paintVertical(self):
         dx = 1

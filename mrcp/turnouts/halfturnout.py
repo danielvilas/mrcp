@@ -6,16 +6,19 @@ from mrcp.switch import *
 from mrcp.led import *
 
 class HalfTurnout(BaseElement):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False) -> None:
+    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, thrownTrackColor=None, up=True, right=True, vertical=False,closedColor=CLOSED_LED_COLOR,thrownColor=THROWN_LED_COLOR) -> None:
         super().__init__(pos=pos, color=color)
+        if thrownTrackColor==None:
+            thrownTrackColor=color;
+
         self._up = up
         self._right = right
         self._vertical = vertical
         self._mainTrack= Track(color=color)
-        self._thrownTrack=Track(color=color)
+        self._thrownTrack=Track(color=thrownTrackColor)
         self._switch=Switch(color=color, vertical=not vertical)
-        self._ledCl= Led()
-        self._ledTh= Led()
+        self._ledCl= Led(color=closedColor)
+        self._ledTh= Led(color=thrownColor)
 
 
     def paint(self):
@@ -24,8 +27,8 @@ class HalfTurnout(BaseElement):
             self.paintVertical()
         else:
             self.paintHorizontal()
-        self._mainTrack.paint()
         self._thrownTrack.paint()
+        self._mainTrack.paint()
         self._switch.paint()
         self._ledCl.paint()
         self._ledTh.paint()

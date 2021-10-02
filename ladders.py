@@ -5,14 +5,14 @@ def myPanel(name, endContra=False):
     panel = mrcp.Panel(name, 215, 120)
     panel.markStart()
     ladder = mrcp.Ladder(color="gray", up=True, right=True,vertical=False)
-    ladder.addStep()
-    ladder.addStep()
+    ladder.addStep(color="blueviolet")
+    ladder.addStep(thrownColor='red',closedColor='cyan')
     panel.add(ladder,Point(1,10))
     ladder.addStep()
     if endContra:
-        ladder.endContraTurnout()
+        ladder.endContraTurnout(thrownColor='red',closedColor='cyan')
 
-    ladder = mrcp.Ladder(color="gray", up=False, right=True,vertical=False)
+    ladder = mrcp.Ladder(color="gray", up=False, right=True,vertical=False,thrownColor='red',closedColor='cyan')
     ladder.addStep()
     ladder.addStep()
     panel.add(ladder,Point(1,13))
