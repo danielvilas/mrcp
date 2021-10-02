@@ -100,6 +100,7 @@ def verticalLadder(panel):
 
 def myPanel(name):
     panel = mrcp.Panel(name, 205, 120)
+    panel.grid()
     panel.markStart()
 
     #Half turnout Horizontal

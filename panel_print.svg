@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="12.0cm"
+   height="14.0cm"
    version="1.1"
-   viewBox="0,0,200,120"
+   viewBox="0,0,200,140"
    width="20.0cm"
-   id="svg476"
+   id="svg478"
    sodipodi:docname="panel_print.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
   <metadata
-     id="metadata480">
+     id="metadata482">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -37,15 +37,15 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
-     id="namedview478"
+     id="namedview480"
      showgrid="false"
-     inkscape:zoom="1.7396354"
+     inkscape:zoom="1.6290774"
      inkscape:cx="377.95276"
-     inkscape:cy="226.77165"
+     inkscape:cy="264.56693"
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g386" />
+     inkscape:current-layer="g172" />
   <defs
      id="defs10">
     <pattern
@@ -87,1079 +87,1542 @@
      id="g172">
     <polyline
        fill="blueviolet"
-       points="80,10.5 40,10.5 40,14.5 80,14.5 80,10.5"
+       points="85,20.5 45,20.5 45,24.5 85,24.5 85,20.5"
        stroke="none"
        id="polyline18" />
     <polyline
        fill="blueviolet"
-       points="195,10.5 100,10.5 100,14.5 195,14.5 195,10.5"
+       points="180,20.5 105,20.5 105,24.5 180,24.5 180,20.5"
        stroke="none"
        id="polyline20" />
     <polyline
        fill="blueviolet"
-       points="195,20.5 80,20.5 80,24.5 195,24.5 195,20.5"
+       points="180,30.5 85,30.5 85,34.5 180,34.5 180,30.5"
        stroke="none"
        id="polyline22" />
     <polyline
        fill="gray"
-       points="120,30.5 60,30.5 60,34.5 120,34.5 120,30.5"
+       points="115,40.5 65,40.5 65,44.5 115,44.5 115,40.5"
        stroke="none"
        id="polyline24" />
     <polyline
        fill="blueviolet"
-       points="59.10557280900009,25.711145618000167 49.10557280900009,30.711145618000167 50.89442719099991,34.28885438199983 60.89442719099991,29.288854381999833 59.10557280900009,25.711145618000167"
+       points="64.10557280900008,35.71114561800017 54.10557280900009,40.71114561800017 55.89442719099991,44.28885438199983 65.89442719099992,39.28885438199983 64.10557280900008,35.71114561800017"
        stroke="none"
        id="polyline26" />
     <polyline
        fill="gray"
-       points="60,30.5 40,30.5 40,34.5 60,34.5 60,30.5"
+       points="65,40.5 45,40.5 45,44.5 65,44.5 65,40.5"
        stroke="none"
        id="polyline28" />
     <circle
-       cx="50"
-       cy="32.5"
+       cx="55"
+       cy="42.5"
        fill="white"
        r="3.0"
        id="circle30" />
     <polyline
        fill="blueviolet"
-       points="80,20.5 70,20.5 70,24.5 80,24.5 80,20.5"
+       points="85,30.5 75,30.5 75,34.5 85,34.5 85,30.5"
        stroke="none"
        id="polyline32" />
     <polyline
        fill="blueviolet"
-       points="79.10557280900008,15.711145618000169 59.10557280900009,25.711145618000167 60.89442719099991,29.288854381999833 80.89442719099992,19.288854381999833 79.10557280900008,15.711145618000169"
+       points="84.10557280900008,25.711145618000167 64.10557280900008,35.71114561800017 65.89442719099992,39.28885438199983 85.89442719099992,29.288854381999833 84.10557280900008,25.711145618000167"
        stroke="none"
        id="polyline34" />
     <circle
-       cx="70"
-       cy="22.5"
+       cx="75"
+       cy="32.5"
        fill="white"
        r="3.0"
        id="circle36" />
     <polyline
        fill="blueviolet"
-       points="80.89442719099992,19.288854381999833 90.89442719099992,14.288854381999831 89.10557280900008,10.711145618000169 79.10557280900008,15.711145618000169 80.89442719099992,19.288854381999833"
+       points="85.89442719099992,29.288854381999833 95.89442719099992,24.288854381999833 94.10557280900008,20.711145618000167 84.10557280900008,25.711145618000167 85.89442719099992,29.288854381999833"
        stroke="none"
        id="polyline38" />
     <polyline
        fill="blueviolet"
-       points="80,10.5 100,10.5 100,14.5 80,14.5 80,10.5"
+       points="85,20.5 105,20.5 105,24.5 85,24.5 85,20.5"
        stroke="none"
        id="polyline40" />
     <circle
-       cx="90"
-       cy="12.5"
+       cx="95"
+       cy="22.5"
        fill="white"
        r="3.0"
        id="circle42" />
     <polyline
        fill="sandybrown"
-       points="140.89442719099992,35.71114561800017 130.89442719099992,30.711145618000167 129.10557280900008,34.28885438199983 139.10557280900008,39.28885438199983 140.89442719099992,35.71114561800017"
+       points="135.89442719099992,45.71114561800017 125.89442719099992,40.71114561800017 124.10557280900008,44.28885438199983 134.10557280900008,49.28885438199983 135.89442719099992,45.71114561800017"
        stroke="none"
        id="polyline44" />
     <polyline
        fill="gray"
-       points="140,30.5 120,30.5 120,34.5 140,34.5 140,30.5"
+       points="135,40.5 115,40.5 115,44.5 135,44.5 135,40.5"
        stroke="none"
        id="polyline46" />
     <circle
-       cx="130"
-       cy="32.5"
+       cx="125"
+       cy="42.5"
        fill="white"
        r="3.0"
        id="circle48" />
     <circle
-       cx="150"
-       cy="42.5"
+       cx="145"
+       cy="52.5"
        fill="sandybrown"
        r="2.0"
        id="circle50" />
     <polyline
        fill="sandybrown"
-       points="160,40.5 150,40.5 150,44.5 160,44.5 160,40.5"
+       points="155,50.5 145,50.5 145,54.5 155,54.5 155,50.5"
        stroke="none"
        id="polyline52" />
     <polyline
        fill="sandybrown"
-       points="150.89442719099992,40.71114561800017 140.89442719099992,35.71114561800017 139.10557280900008,39.28885438199983 149.10557280900008,44.28885438199983 150.89442719099992,40.71114561800017"
+       points="145.89442719099992,50.71114561800017 135.89442719099992,45.71114561800017 134.10557280900008,49.28885438199983 144.10557280900008,54.28885438199983 145.89442719099992,50.71114561800017"
        stroke="none"
        id="polyline54" />
     <polyline
        fill="gray"
-       points="160,30.5 140,30.5 140,34.5 160,34.5 160,30.5"
+       points="155,40.5 135,40.5 135,44.5 155,44.5 155,40.5"
        stroke="none"
        id="polyline56" />
     <polyline
        fill="gray"
-       points="160,105.5 40,105.5 40,109.5 160,109.5 160,105.5"
+       points="155,115.5 45,115.5 45,119.5 155,119.5 155,115.5"
        stroke="none"
        id="polyline58" />
     <polyline
        fill="gray"
-       points="140,95.5 40,95.5 40,99.5 140,99.5 140,95.5"
+       points="135,105.5 45,105.5 45,109.5 135,109.5 135,105.5"
        stroke="none"
        id="polyline60" />
     <polyline
        fill="sandybrown"
-       points="160,85.5 140,85.5 140,89.5 160,89.5 160,85.5"
+       points="155,95.5 135,95.5 135,99.5 155,99.5 155,95.5"
        stroke="none"
        id="polyline62" />
     <polyline
        fill="sandybrown"
-       points="120,85.5 80,85.5 80,89.5 120,89.5 120,85.5"
+       points="115,95.5 80,95.5 80,99.5 115,99.5 115,95.5"
        stroke="none"
        id="polyline64" />
     <polyline
        fill="gray"
-       points="139.10557280900008,94.28885438199983 149.10557280900008,99.28885438199983 150.89442719099992,95.71114561800017 140.89442719099992,90.71114561800017 139.10557280900008,94.28885438199983"
+       points="134.10557280900008,104.28885438199983 144.10557280900008,109.28885438199983 145.89442719099992,105.71114561800017 135.89442719099992,100.71114561800017 134.10557280900008,104.28885438199983"
        stroke="none"
        id="polyline66" />
     <polyline
        fill="gray"
-       points="140,95.5 160,95.5 160,99.5 140,99.5 140,95.5"
+       points="135,105.5 155,105.5 155,109.5 135,109.5 135,105.5"
        stroke="none"
        id="polyline68" />
     <circle
-       cx="150"
-       cy="97.5"
+       cx="145"
+       cy="107.5"
        fill="white"
        r="3.0"
        id="circle70" />
     <polyline
        fill="sandybrown"
-       points="140.89442719099992,90.71114561800017 130.89442719099992,85.71114561800017 129.10557280900008,89.28885438199983 139.10557280900008,94.28885438199983 140.89442719099992,90.71114561800017"
+       points="135.89442719099992,100.71114561800017 125.89442719099992,95.71114561800017 124.10557280900008,99.28885438199983 134.10557280900008,104.28885438199983 135.89442719099992,100.71114561800017"
        stroke="none"
        id="polyline72" />
     <polyline
        fill="sandybrown"
-       points="140,85.5 120,85.5 120,89.5 140,89.5 140,85.5"
+       points="135,95.5 115,95.5 115,99.5 135,99.5 135,95.5"
        stroke="none"
        id="polyline74" />
     <circle
-       cx="130"
-       cy="87.5"
+       cx="125"
+       cy="97.5"
        fill="white"
        r="3.0"
        id="circle76" />
     <polyline
        fill="gray"
-       points="19.288854381999833,79.10557280900008 14.288854381999831,69.10557280900008 10.711145618000169,70.89442719099992 15.711145618000169,80.89442719099992 19.288854381999833,79.10557280900008"
+       points="24.288854381999833,89.10557280900008 19.288854381999833,79.10557280900008 15.711145618000169,80.89442719099992 20.711145618000167,90.89442719099992 24.288854381999833,89.10557280900008"
        stroke="none"
        id="polyline78" />
     <polyline
        fill="gray"
-       points="10.5,80 10.5,60 14.5,60 14.5,80 10.5,80"
+       points="15.5,90 15.5,70 19.5,70 19.5,90 15.5,90"
        stroke="none"
        id="polyline80" />
     <circle
-       cx="12.5"
-       cy="70"
+       cx="17.5"
+       cy="80"
        fill="white"
        r="3.0"
        id="circle82" />
     <circle
-       cx="22.5"
-       cy="107.5"
+       cx="27.5"
+       cy="117.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle84" />
     <circle
-       cx="30"
-       cy="97.5"
+       cx="35"
+       cy="107.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle86" />
     <circle
-       cx="12.5"
-       cy="97.5"
+       cx="17.5"
+       cy="107.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle88" />
     <circle
-       cx="22.5"
-       cy="90"
+       cx="27.5"
+       cy="100"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle90" />
     <polyline
        fill="gray"
-       points="24.288854381999833,89.10557280900008 19.288854381999833,79.10557280900008 15.711145618000169,80.89442719099992 20.711145618000167,90.89442719099992 24.288854381999833,89.10557280900008"
+       points="29.288854381999833,99.10557280900008 24.288854381999833,89.10557280900008 20.711145618000167,90.89442719099992 25.711145618000167,100.89442719099992 29.288854381999833,99.10557280900008"
        stroke="none"
        id="polyline92" />
     <polyline
        fill="gray"
-       points="31.414213562373096,96.08578643762691 23.914213562373096,88.58578643762691 21.085786437626904,91.41421356237309 28.585786437626904,98.91421356237309 31.414213562373096,96.08578643762691"
+       points="36.41421356237309,106.08578643762691 28.914213562373096,98.58578643762691 26.085786437626904,101.41421356237309 33.58578643762691,108.91421356237309 36.41421356237309,106.08578643762691"
        stroke="none"
        id="polyline94" />
     <polyline
        fill="gray"
-       points="40,95.5 30,95.5 30,99.5 40,99.5 40,95.5"
+       points="45,105.5 35,105.5 35,109.5 45,109.5 45,105.5"
        stroke="none"
        id="polyline96" />
     <polyline
        fill="gray"
-       points="10.5,97.5 10.5,80 14.5,80 14.5,97.5 10.5,97.5"
+       points="15.5,107.5 15.5,90 19.5,90 19.5,107.5 15.5,107.5"
        stroke="none"
        id="polyline98" />
     <polyline
        fill="gray"
-       points="23.914213562373096,106.08578643762691 13.914213562373096,96.08578643762691 11.085786437626904,98.91421356237309 21.085786437626904,108.91421356237309 23.914213562373096,106.08578643762691"
+       points="28.914213562373096,116.08578643762691 18.914213562373096,106.08578643762691 16.085786437626904,108.91421356237309 26.085786437626904,118.91421356237309 28.914213562373096,116.08578643762691"
        stroke="none"
        id="polyline100" />
     <polyline
        fill="gray"
-       points="40,105.5 22.5,105.5 22.5,109.5 40,109.5 40,105.5"
+       points="45,115.5 27.5,115.5 27.5,119.5 45,119.5 45,115.5"
        stroke="none"
        id="polyline102" />
     <polyline
        fill="gray"
-       points="184.28885438199984,80.89442719099992 189.28885438199984,70.89442719099992 185.71114561800016,69.10557280900008 180.71114561800016,79.10557280900008 184.28885438199984,80.89442719099992"
+       points="179.28885438199984,90.89442719099992 184.28885438199984,80.89442719099992 180.71114561800016,79.10557280900008 175.71114561800016,89.10557280900008 179.28885438199984,90.89442719099992"
        stroke="none"
        id="polyline104" />
     <polyline
        fill="gray"
-       points="185.5,80 185.5,60 189.5,60 189.5,80 185.5,80"
+       points="180.5,90 180.5,70 184.5,70 184.5,90 180.5,90"
        stroke="none"
        id="polyline106" />
     <circle
-       cx="187.5"
-       cy="70"
+       cx="182.5"
+       cy="80"
        fill="white"
        r="3.0"
        id="circle108" />
     <circle
-       cx="177.5"
-       cy="107.5"
+       cx="172.5"
+       cy="117.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle110" />
     <circle
-       cx="170"
-       cy="97.5"
+       cx="165"
+       cy="107.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle112" />
     <circle
-       cx="187.5"
-       cy="97.5"
+       cx="182.5"
+       cy="107.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle114" />
     <circle
-       cx="177.5"
-       cy="90"
+       cx="172.5"
+       cy="100"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle116" />
     <polyline
        fill="gray"
-       points="179.28885438199984,90.89442719099992 184.28885438199984,80.89442719099992 180.71114561800016,79.10557280900008 175.71114561800016,89.10557280900008 179.28885438199984,90.89442719099992"
+       points="174.28885438199984,100.89442719099992 179.28885438199984,90.89442719099992 175.71114561800016,89.10557280900008 170.71114561800016,99.10557280900008 174.28885438199984,100.89442719099992"
        stroke="none"
        id="polyline118" />
     <polyline
        fill="gray"
-       points="171.4142135623731,98.91421356237309 178.9142135623731,91.41421356237309 176.0857864376269,88.58578643762691 168.5857864376269,96.08578643762691 171.4142135623731,98.91421356237309"
+       points="166.4142135623731,108.91421356237309 173.9142135623731,101.41421356237309 171.0857864376269,98.58578643762691 163.5857864376269,106.08578643762691 166.4142135623731,108.91421356237309"
        stroke="none"
        id="polyline120" />
     <polyline
        fill="gray"
-       points="160,95.5 170,95.5 170,99.5 160,99.5 160,95.5"
+       points="155,105.5 165,105.5 165,109.5 155,109.5 155,105.5"
        stroke="none"
        id="polyline122" />
     <polyline
        fill="gray"
-       points="185.5,97.5 185.5,80 189.5,80 189.5,97.5 185.5,97.5"
+       points="180.5,107.5 180.5,90 184.5,90 184.5,107.5 180.5,107.5"
        stroke="none"
        id="polyline124" />
     <polyline
        fill="gray"
-       points="178.9142135623731,108.91421356237309 188.9142135623731,98.91421356237309 186.0857864376269,96.08578643762691 176.0857864376269,106.08578643762691 178.9142135623731,108.91421356237309"
+       points="173.9142135623731,118.91421356237309 183.9142135623731,108.91421356237309 181.0857864376269,106.08578643762691 171.0857864376269,116.08578643762691 173.9142135623731,118.91421356237309"
        stroke="none"
        id="polyline126" />
     <polyline
        fill="gray"
-       points="160,105.5 177.5,105.5 177.5,109.5 160,109.5 160,105.5"
+       points="155,115.5 172.5,115.5 172.5,119.5 155,119.5 155,115.5"
        stroke="none"
        id="polyline128" />
     <polyline
        fill="gray"
-       points="10.5,47.5 10.5,60 14.5,60 14.5,47.5 10.5,47.5"
+       points="15.5,57.5 15.5,70 19.5,70 19.5,57.5 15.5,57.5"
        stroke="none"
        id="polyline130" />
     <polyline
        fill="gray"
-       points="26.085786437626904,31.085786437626904 11.085786437626904,46.08578643762691 13.914213562373096,48.91421356237309 28.914213562373096,33.91421356237309 26.085786437626904,31.085786437626904"
+       points="31.085786437626904,41.08578643762691 16.085786437626904,56.08578643762691 18.914213562373096,58.91421356237309 33.91421356237309,43.91421356237309 31.085786437626904,41.08578643762691"
        stroke="none"
        id="polyline132" />
     <polyline
        fill="gray"
-       points="40,30.5 27.5,30.5 27.5,34.5 40,34.5 40,30.5"
+       points="45,40.5 32.5,40.5 32.5,44.5 45,44.5 45,40.5"
        stroke="none"
        id="polyline134" />
     <circle
-       cx="12.5"
-       cy="47.5"
+       cx="17.5"
+       cy="57.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle136" />
     <circle
-       cx="27.5"
-       cy="32.5"
+       cx="32.5"
+       cy="42.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle138" />
     <polyline
        fill="gray"
-       points="185.5,47.5 185.5,60 189.5,60 189.5,47.5 185.5,47.5"
+       points="180.5,57.5 180.5,70 184.5,70 184.5,57.5 180.5,57.5"
        stroke="none"
        id="polyline140" />
     <polyline
        fill="gray"
-       points="171.0857864376269,33.91421356237309 186.0857864376269,48.91421356237309 188.9142135623731,46.08578643762691 173.9142135623731,31.085786437626904 171.0857864376269,33.91421356237309"
+       points="166.0857864376269,43.91421356237309 181.0857864376269,58.91421356237309 183.9142135623731,56.08578643762691 168.9142135623731,41.08578643762691 166.0857864376269,43.91421356237309"
        stroke="none"
        id="polyline142" />
     <polyline
        fill="gray"
-       points="160,30.5 172.5,30.5 172.5,34.5 160,34.5 160,30.5"
+       points="155,40.5 167.5,40.5 167.5,44.5 155,44.5 155,40.5"
        stroke="none"
        id="polyline144" />
     <circle
-       cx="187.5"
-       cy="47.5"
+       cx="182.5"
+       cy="57.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle146" />
     <circle
-       cx="172.5"
-       cy="32.5"
+       cx="167.5"
+       cy="42.5"
        fill="gray"
        r="2.0"
        stroke="none"
        id="circle148" />
     <polyline
        fill="sandybrown"
-       points="175.5,57.5 175.5,60 179.5,60 179.5,57.5 175.5,57.5"
+       points="170.5,67.5 170.5,70 174.5,70 174.5,67.5 170.5,67.5"
        stroke="none"
        id="polyline150" />
     <polyline
        fill="sandybrown"
-       points="161.0857864376269,43.91421356237309 176.0857864376269,58.91421356237309 178.9142135623731,56.08578643762691 163.9142135623731,41.08578643762691 161.0857864376269,43.91421356237309"
+       points="156.0857864376269,53.91421356237309 171.0857864376269,68.91421356237309 173.9142135623731,66.08578643762691 158.9142135623731,51.08578643762691 156.0857864376269,53.91421356237309"
        stroke="none"
        id="polyline152" />
     <polyline
        fill="sandybrown"
-       points="160,40.5 162.5,40.5 162.5,44.5 160,44.5 160,40.5"
+       points="155,50.5 157.5,50.5 157.5,54.5 155,54.5 155,50.5"
        stroke="none"
        id="polyline154" />
     <circle
-       cx="177.5"
-       cy="57.5"
+       cx="172.5"
+       cy="67.5"
        fill="sandybrown"
        r="2.0"
        stroke="none"
        id="circle156" />
     <circle
-       cx="162.5"
-       cy="42.5"
+       cx="157.5"
+       cy="52.5"
        fill="sandybrown"
        r="2.0"
        stroke="none"
        id="circle158" />
     <polyline
        fill="sandybrown"
-       points="175.5,72.5 175.5,70 179.5,70 179.5,72.5 175.5,72.5"
+       points="170.5,82.5 170.5,80 174.5,80 174.5,82.5 170.5,82.5"
        stroke="none"
        id="polyline160" />
     <polyline
        fill="sandybrown"
-       points="163.9142135623731,88.91421356237309 178.9142135623731,73.91421356237309 176.0857864376269,71.08578643762691 161.0857864376269,86.08578643762691 163.9142135623731,88.91421356237309"
+       points="158.9142135623731,98.91421356237309 173.9142135623731,83.91421356237309 171.0857864376269,81.08578643762691 156.0857864376269,96.08578643762691 158.9142135623731,98.91421356237309"
        stroke="none"
        id="polyline162" />
     <polyline
        fill="sandybrown"
-       points="160,85.5 162.5,85.5 162.5,89.5 160,89.5 160,85.5"
+       points="155,95.5 157.5,95.5 157.5,99.5 155,99.5 155,95.5"
        stroke="none"
        id="polyline164" />
     <circle
-       cx="177.5"
-       cy="72.5"
+       cx="172.5"
+       cy="82.5"
        fill="sandybrown"
        r="2.0"
        stroke="none"
        id="circle166" />
     <circle
-       cx="162.5"
-       cy="87.5"
+       cx="157.5"
+       cy="97.5"
        fill="sandybrown"
        r="2.0"
        stroke="none"
        id="circle168" />
     <polyline
        fill="sandybrown"
-       points="175.5,70 175.5,60 179.5,60 179.5,70 175.5,70"
+       points="170.5,80 170.5,70 174.5,70 174.5,80 170.5,80"
        stroke="none"
        id="polyline170" />
   </g>
   <g
      inkscape:groupmode="layer"
      inkscape:label="Cut"
-     id="g386"
-     style="display:inline">
+     sodipodi:insensitive="1"
+     id="g386">
     <circle
-       cx="50"
-       cy="32.5"
+       cx="55"
+       cy="42.5"
        fill="none"
-       r="3"
-       stroke="#ff0000"
+       r="3.0"
+       stroke="red"
        stroke-width="0.2"
        id="circle174" />
     <circle
-       cx="60"
-       cy="32.5"
+       cx="55"
+       cy="42.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle176" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="50"
+       y="35.0"
+       id="rect178" />
+    <circle
+       cx="65"
+       cy="42.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle180" />
     <circle
-       cx="60"
-       cy="27.5"
+       cx="65"
+       cy="42.5"
        fill="none"
-       r="1.5"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
        stroke-width="0.2"
-       id="circle184" />
+       id="circle182" />
     <circle
-       cx="70"
-       cy="22.5"
-       fill="none"
-       r="3"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle188" />
-    <circle
-       cx="80"
-       cy="17.5"
-       fill="none"
-       r="1.5"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle194" />
-    <circle
-       cx="80"
-       cy="22.5"
-       fill="none"
-       r="1.5"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle198" />
-    <circle
-       cx="90"
-       cy="12.5"
-       fill="none"
-       r="3"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle202" />
-    <circle
-       cx="80"
-       cy="12.5"
-       fill="none"
-       r="1.5"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle208" />
-    <circle
-       cx="130"
-       cy="32.5"
-       fill="none"
-       r="3"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle212" />
-    <circle
-       cx="140"
-       cy="32.5"
-       fill="none"
-       r="1.5"
-       stroke="#ff0000"
-       stroke-width="0.2"
-       id="circle218" />
-    <circle
-       cx="140"
+       cx="65"
        cy="37.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle184" />
+    <circle
+       cx="65"
+       cy="37.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle186" />
+    <circle
+       cx="75"
+       cy="32.5"
+       fill="none"
+       r="3.0"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle188" />
+    <circle
+       cx="75"
+       cy="32.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle190" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="70"
+       y="25.0"
+       id="rect192" />
+    <circle
+       cx="85"
+       cy="27.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle194" />
+    <circle
+       cx="85"
+       cy="27.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle196" />
+    <circle
+       cx="85"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle198" />
+    <circle
+       cx="85"
+       cy="32.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle200" />
+    <circle
+       cx="95"
+       cy="22.5"
+       fill="none"
+       r="3.0"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle202" />
+    <circle
+       cx="95"
+       cy="22.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle204" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="90"
+       y="15.0"
+       id="rect206" />
+    <circle
+       cx="85"
+       cy="22.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle208" />
+    <circle
+       cx="85"
+       cy="22.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle210" />
+    <circle
+       cx="125"
+       cy="42.5"
+       fill="none"
+       r="3.0"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle212" />
+    <circle
+       cx="125"
+       cy="42.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle214" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="120"
+       y="35.0"
+       id="rect216" />
+    <circle
+       cx="135"
+       cy="42.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle218" />
+    <circle
+       cx="135"
+       cy="42.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle220" />
+    <circle
+       cx="135"
+       cy="47.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
        stroke-width="0.2"
        id="circle222" />
     <circle
-       cx="150"
-       cy="97.5"
+       cx="135"
+       cy="47.5"
        fill="none"
-       r="3"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle224" />
+    <circle
+       cx="145"
+       cy="107.5"
+       fill="none"
+       r="3.0"
+       stroke="red"
        stroke-width="0.2"
        id="circle226" />
     <circle
-       cx="140"
-       cy="97.5"
+       cx="145"
+       cy="107.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle228" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="140"
+       y="100.0"
+       id="rect230" />
+    <circle
+       cx="135"
+       cy="107.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle232" />
     <circle
-       cx="140"
-       cy="92.5"
+       cx="135"
+       cy="107.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle234" />
+    <circle
+       cx="135"
+       cy="102.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle236" />
     <circle
-       cx="130"
-       cy="87.5"
+       cx="135"
+       cy="102.5"
        fill="none"
-       r="3"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle238" />
+    <circle
+       cx="125"
+       cy="97.5"
+       fill="none"
+       r="3.0"
+       stroke="red"
        stroke-width="0.2"
        id="circle240" />
     <circle
-       cx="140"
-       cy="87.5"
+       cx="125"
+       cy="97.5"
+       fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle242" />
+    <rect
+       fill="none"
+       height="15"
+       stroke="blue"
+       stroke-width="0.2"
+       width="10"
+       x="120"
+       y="90.0"
+       id="rect244" />
+    <circle
+       cx="135"
+       cy="97.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle246" />
     <circle
-       cx="12.5"
-       cy="70"
+       cx="135"
+       cy="97.5"
        fill="none"
-       r="3"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle248" />
+    <circle
+       cx="17.5"
+       cy="80"
+       fill="none"
+       r="3.0"
+       stroke="red"
        stroke-width="0.2"
        id="circle250" />
     <circle
-       cx="12.5"
+       cx="17.5"
        cy="80"
        fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle252" />
+    <rect
+       fill="none"
+       height="10"
+       stroke="blue"
+       stroke-width="0.2"
+       width="15"
+       x="10.0"
+       y="75"
+       id="rect254" />
+    <circle
+       cx="17.5"
+       cy="90"
+       fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle256" />
     <circle
        cx="17.5"
-       cy="80"
+       cy="90"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle258" />
+    <circle
+       cx="22.5"
+       cy="90"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle260" />
     <circle
-       cx="187.5"
-       cy="70"
+       cx="22.5"
+       cy="90"
        fill="none"
-       r="3"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle262" />
+    <circle
+       cx="182.5"
+       cy="80"
+       fill="none"
+       r="3.0"
+       stroke="red"
        stroke-width="0.2"
        id="circle264" />
     <circle
-       cx="187.5"
+       cx="182.5"
        cy="80"
        fill="none"
+       r="6.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle266" />
+    <rect
+       fill="none"
+       height="10"
+       stroke="blue"
+       stroke-width="0.2"
+       width="15"
+       x="175.0"
+       y="75"
+       id="rect268" />
+    <circle
+       cx="182.5"
+       cy="90"
+       fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle270" />
     <circle
        cx="182.5"
-       cy="80"
+       cy="90"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle272" />
+    <circle
+       cx="177.5"
+       cy="90"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle274" />
     <circle
-       cx="20"
-       cy="40"
+       cx="177.5"
+       cy="90"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle276" />
+    <circle
+       cx="25"
+       cy="50"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle278" />
     <circle
        cx="25"
-       cy="92.5"
+       cy="50"
        fill="none"
-       r="1.5"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
        stroke-width="0.2"
-       id="circle282" />
+       id="circle280" />
     <circle
-       cx="17.5"
+       cx="30"
        cy="102.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle282" />
+    <circle
+       cx="30"
+       cy="102.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle284" />
+    <circle
+       cx="22.5"
+       cy="112.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
        stroke-width="0.2"
        id="circle286" />
     <circle
-       cx="60"
-       cy="107.5"
+       cx="22.5"
+       cy="112.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle288" />
+    <circle
+       cx="67.5"
+       cy="117.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle290" />
     <circle
-       cx="60"
-       cy="97.5"
+       cx="67.5"
+       cy="117.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle292" />
+    <circle
+       cx="67.5"
+       cy="107.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle294" />
     <circle
-       cx="100"
+       cx="67.5"
        cy="107.5"
        fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle296" />
+    <circle
+       cx="97.5"
+       cy="117.5"
+       fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle298" />
     <circle
-       cx="100"
-       cy="97.5"
+       cx="97.5"
+       cy="117.5"
        fill="none"
-       r="1.5"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
        stroke-width="0.2"
-       id="circle302" />
+       id="circle300" />
     <circle
-       cx="140"
+       cx="97.5"
        cy="107.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle302" />
+    <circle
+       cx="97.5"
+       cy="107.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle304" />
+    <circle
+       cx="125"
+       cy="117.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
        stroke-width="0.2"
        id="circle306" />
     <circle
-       cx="130"
-       cy="97.5"
+       cx="125"
+       cy="117.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle308" />
+    <circle
+       cx="125"
+       cy="107.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle310" />
     <circle
-       cx="150"
-       cy="32.5"
+       cx="125"
+       cy="107.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle312" />
+    <circle
+       cx="145"
+       cy="42.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle314" />
     <circle
-       cx="100"
-       cy="32.5"
+       cx="145"
+       cy="42.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle316" />
+    <circle
+       cx="107.5"
+       cy="42.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle318" />
     <circle
-       cx="70"
-       cy="32.5"
+       cx="107.5"
+       cy="42.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle320" />
+    <circle
+       cx="85"
+       cy="42.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle322" />
     <circle
-       cx="180"
-       cy="40"
+       cx="85"
+       cy="42.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle324" />
+    <circle
+       cx="175"
+       cy="50"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle326" />
     <circle
        cx="175"
-       cy="92.5"
+       cy="50"
        fill="none"
-       r="1.5"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
        stroke-width="0.2"
-       id="circle330" />
+       id="circle328" />
     <circle
-       cx="182.5"
+       cx="170"
        cy="102.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle330" />
+    <circle
+       cx="170"
+       cy="102.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle332" />
+    <circle
+       cx="177.5"
+       cy="112.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
        stroke-width="0.2"
        id="circle334" />
     <circle
-       cx="100"
-       cy="87.5"
+       cx="177.5"
+       cy="112.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle336" />
+    <circle
+       cx="97.5"
+       cy="97.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle338" />
     <circle
-       cx="150"
-       cy="87.5"
+       cx="97.5"
+       cy="97.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle340" />
+    <circle
+       cx="145"
+       cy="97.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle342" />
     <circle
-       cx="170"
-       cy="80"
+       cx="145"
+       cy="97.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle344" />
+    <circle
+       cx="165"
+       cy="90"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle346" />
     <circle
-       cx="170"
-       cy="50"
+       cx="165"
+       cy="90"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle348" />
+    <circle
+       cx="165"
+       cy="60"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle350" />
     <circle
-       cx="150"
-       cy="42.5"
+       cx="165"
+       cy="60"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle352" />
+    <circle
+       cx="145"
+       cy="52.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle354" />
     <circle
-       cx="177.5"
-       cy="22.5"
+       cx="145"
+       cy="52.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle356" />
+    <circle
+       cx="157.5"
+       cy="32.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle358" />
     <circle
-       cx="177.5"
-       cy="12.5"
+       cx="157.5"
+       cy="32.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle360" />
+    <circle
+       cx="157.5"
+       cy="22.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle362" />
     <circle
-       cx="140"
+       cx="157.5"
        cy="22.5"
        fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle364" />
+    <circle
+       cx="135"
+       cy="32.5"
+       fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle366" />
     <circle
-       cx="140"
-       cy="12.5"
+       cx="135"
+       cy="32.5"
        fill="none"
-       r="1.5"
-       stroke="#ff0000"
+       r="2.0"
+       stroke="blue"
        stroke-width="0.2"
-       id="circle370" />
+       id="circle368" />
     <circle
-       cx="100"
+       cx="135"
        cy="22.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
+       stroke-width="0.2"
+       id="circle370" />
+    <circle
+       cx="135"
+       cy="22.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle372" />
+    <circle
+       cx="107.5"
+       cy="32.5"
+       fill="none"
+       r="1.5"
+       stroke="red"
        stroke-width="0.2"
        id="circle374" />
     <circle
-       cx="100"
-       cy="12.5"
+       cx="107.5"
+       cy="32.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle376" />
+    <circle
+       cx="107.5"
+       cy="22.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle378" />
     <circle
-       cx="60"
-       cy="12.5"
+       cx="107.5"
+       cy="22.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle380" />
+    <circle
+       cx="65"
+       cy="22.5"
        fill="none"
        r="1.5"
-       stroke="#ff0000"
+       stroke="red"
        stroke-width="0.2"
        id="circle382" />
+    <circle
+       cx="65"
+       cy="22.5"
+       fill="none"
+       r="2.0"
+       stroke="blue"
+       stroke-width="0.2"
+       id="circle384" />
   </g>
   <g
      inkscape:groupmode="layer"
      inkscape:label="Led"
-     sodipodi:insensitive="true"
-     id="g470"
-     style="display:inline">
+     sodipodi:insensitive="1"
+     id="g470">
     <circle
-       cx="60"
-       cy="32.5"
-       fill="#00ff00"
+       cx="65"
+       cy="42.5"
+       fill="lime"
        r="1.5"
        id="circle388" />
     <circle
-       cx="60"
-       cy="27.5"
-       fill="#ffff00"
+       cx="65"
+       cy="37.5"
+       fill="yellow"
        r="1.5"
        id="circle390" />
     <circle
-       cx="80"
-       cy="17.5"
-       fill="#ffff00"
+       cx="85"
+       cy="27.5"
+       fill="yellow"
        r="1.5"
        id="circle392" />
     <circle
-       cx="80"
-       cy="22.5"
-       fill="#00ff00"
+       cx="85"
+       cy="32.5"
+       fill="lime"
        r="1.5"
        id="circle394" />
     <circle
-       cx="80"
-       cy="12.5"
-       fill="#00ff00"
+       cx="85"
+       cy="22.5"
+       fill="lime"
        r="1.5"
        id="circle396" />
     <circle
-       cx="140"
-       cy="32.5"
-       fill="#00ff00"
+       cx="135"
+       cy="42.5"
+       fill="lime"
        r="1.5"
        id="circle398" />
     <circle
-       cx="140"
-       cy="37.5"
-       fill="#ffff00"
+       cx="135"
+       cy="47.5"
+       fill="yellow"
        r="1.5"
        id="circle400" />
     <circle
-       cx="140"
-       cy="97.5"
-       fill="#00ff00"
+       cx="135"
+       cy="107.5"
+       fill="lime"
        r="1.5"
        id="circle402" />
     <circle
-       cx="140"
-       cy="92.5"
-       fill="#ffff00"
+       cx="135"
+       cy="102.5"
+       fill="yellow"
        r="1.5"
        id="circle404" />
     <circle
-       cx="140"
-       cy="87.5"
-       fill="#00ff00"
+       cx="135"
+       cy="97.5"
+       fill="lime"
        r="1.5"
        id="circle406" />
     <circle
-       cx="12.5"
-       cy="80"
-       fill="#00ff00"
+       cx="17.5"
+       cy="90"
+       fill="lime"
        r="1.5"
        id="circle408" />
     <circle
-       cx="17.5"
-       cy="80"
-       fill="#ffff00"
+       cx="22.5"
+       cy="90"
+       fill="yellow"
        r="1.5"
        id="circle410" />
     <circle
-       cx="187.5"
-       cy="80"
-       fill="#00ff00"
+       cx="182.5"
+       cy="90"
+       fill="lime"
        r="1.5"
        id="circle412" />
     <circle
-       cx="182.5"
-       cy="80"
-       fill="#ffff00"
+       cx="177.5"
+       cy="90"
+       fill="yellow"
        r="1.5"
        id="circle414" />
     <circle
-       cx="20"
-       cy="40"
-       fill="#f08080"
+       cx="25"
+       cy="50"
+       fill="lightcoral"
        r="1.5"
        id="circle416" />
     <circle
-       cx="25"
-       cy="92.5"
-       fill="#f08080"
+       cx="30"
+       cy="102.5"
+       fill="lightcoral"
        r="1.5"
        id="circle418" />
     <circle
-       cx="17.5"
-       cy="102.5"
-       fill="#f08080"
+       cx="22.5"
+       cy="112.5"
+       fill="lightcoral"
        r="1.5"
        id="circle420" />
     <circle
-       cx="60"
-       cy="107.5"
-       fill="#f08080"
+       cx="67.5"
+       cy="117.5"
+       fill="lightcoral"
        r="1.5"
        id="circle422" />
     <circle
-       cx="60"
-       cy="97.5"
-       fill="#f08080"
+       cx="67.5"
+       cy="107.5"
+       fill="lightcoral"
        r="1.5"
        id="circle424" />
     <circle
-       cx="100"
-       cy="107.5"
-       fill="#f08080"
+       cx="97.5"
+       cy="117.5"
+       fill="lightcoral"
        r="1.5"
        id="circle426" />
     <circle
-       cx="100"
-       cy="97.5"
-       fill="#f08080"
+       cx="97.5"
+       cy="107.5"
+       fill="lightcoral"
        r="1.5"
        id="circle428" />
     <circle
-       cx="140"
-       cy="107.5"
-       fill="#f08080"
+       cx="125"
+       cy="117.5"
+       fill="lightcoral"
        r="1.5"
        id="circle430" />
     <circle
-       cx="130"
-       cy="97.5"
-       fill="#f08080"
+       cx="125"
+       cy="107.5"
+       fill="lightcoral"
        r="1.5"
        id="circle432" />
     <circle
-       cx="150"
-       cy="32.5"
-       fill="#f08080"
+       cx="145"
+       cy="42.5"
+       fill="lightcoral"
        r="1.5"
        id="circle434" />
     <circle
-       cx="100"
-       cy="32.5"
-       fill="#f08080"
+       cx="107.5"
+       cy="42.5"
+       fill="lightcoral"
        r="1.5"
        id="circle436" />
     <circle
-       cx="70"
-       cy="32.5"
-       fill="#f08080"
+       cx="85"
+       cy="42.5"
+       fill="lightcoral"
        r="1.5"
        id="circle438" />
     <circle
-       cx="180"
-       cy="40"
-       fill="#f08080"
+       cx="175"
+       cy="50"
+       fill="lightcoral"
        r="1.5"
        id="circle440" />
     <circle
-       cx="175"
-       cy="92.5"
-       fill="#f08080"
+       cx="170"
+       cy="102.5"
+       fill="lightcoral"
        r="1.5"
        id="circle442" />
     <circle
-       cx="182.5"
-       cy="102.5"
-       fill="#f08080"
+       cx="177.5"
+       cy="112.5"
+       fill="lightcoral"
        r="1.5"
        id="circle444" />
     <circle
-       cx="100"
-       cy="87.5"
-       fill="#ffe4e1"
+       cx="97.5"
+       cy="97.5"
+       fill="mistyrose"
        r="1.5"
        id="circle446" />
     <circle
-       cx="150"
-       cy="87.5"
-       fill="#ffe4e1"
+       cx="145"
+       cy="97.5"
+       fill="mistyrose"
        r="1.5"
        id="circle448" />
     <circle
-       cx="170"
-       cy="80"
-       fill="#ffe4e1"
+       cx="165"
+       cy="90"
+       fill="mistyrose"
        r="1.5"
        id="circle450" />
     <circle
-       cx="170"
-       cy="50"
-       fill="#ffe4e1"
+       cx="165"
+       cy="60"
+       fill="mistyrose"
        r="1.5"
        id="circle452" />
     <circle
-       cx="150"
-       cy="42.5"
-       fill="#ffe4e1"
+       cx="145"
+       cy="52.5"
+       fill="mistyrose"
        r="1.5"
        id="circle454" />
     <circle
-       cx="177.5"
-       cy="22.5"
-       fill="#add8e6"
+       cx="157.5"
+       cy="32.5"
+       fill="lightblue"
        r="1.5"
        id="circle456" />
     <circle
-       cx="177.5"
-       cy="12.5"
-       fill="#add8e6"
+       cx="157.5"
+       cy="22.5"
+       fill="lightblue"
        r="1.5"
        id="circle458" />
     <circle
-       cx="140"
-       cy="22.5"
-       fill="#add8e6"
+       cx="135"
+       cy="32.5"
+       fill="lightblue"
        r="1.5"
        id="circle460" />
     <circle
-       cx="140"
-       cy="12.5"
-       fill="#add8e6"
+       cx="135"
+       cy="22.5"
+       fill="lightblue"
        r="1.5"
        id="circle462" />
     <circle
-       cx="100"
-       cy="22.5"
-       fill="#add8e6"
+       cx="107.5"
+       cy="32.5"
+       fill="lightblue"
        r="1.5"
        id="circle464" />
     <circle
-       cx="100"
-       cy="12.5"
-       fill="#add8e6"
+       cx="107.5"
+       cy="22.5"
+       fill="lightblue"
        r="1.5"
        id="circle466" />
     <circle
-       cx="60"
-       cy="12.5"
-       fill="#add8e6"
+       cx="65"
+       cy="22.5"
+       fill="lightblue"
        r="1.5"
        id="circle468" />
   </g>
@@ -1167,15 +1630,24 @@
      inkscape:groupmode="layer"
      inkscape:label="Outs"
      sodipodi:insensitive="1"
-     id="g474">
+     id="g476">
     <rect
        fill="none"
-       height="120"
+       height="126"
+       stroke="blue"
+       stroke-width="0.2"
+       width="186"
+       x="7"
+       y="7"
+       id="rect472" />
+    <rect
+       fill="none"
+       height="140"
        stroke="red"
        stroke-width="0.2"
        width="200"
        x="0"
        y="0"
-       id="rect472" />
+       id="rect474" />
   </g>
 </svg>

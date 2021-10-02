@@ -3,6 +3,7 @@ from mrcp.points import *
 
 def myPanel(name, endContra=False):
     panel = mrcp.Panel(name, 215, 120)
+    panel.grid()
     panel.markStart()
     ladder = mrcp.Ladder(color="gray", up=True, right=True,vertical=False)
     ladder.addStep(color="blueviolet")

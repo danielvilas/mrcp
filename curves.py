@@ -41,6 +41,7 @@ def horizontal23(panel):
 
 def myPanel(name):
     panel = mrcp.Panel(name, 200, 200)
+    panel.grid()
     panel.markStart()
 
     r1r4_curves(panel)

@@ -24,14 +24,17 @@ class Panel(object):
     def __init__(self, name, width, height):
         svgWidht = '{}cm'.format(width/10)
         svgHeight = '{}cm'.format(height/10)
-        print(svgWidht + ' ' + svgHeight)
+        print("Panel: "+name+" "+ svgWidht + ' ' + svgHeight)
 
         self._dwg = svgwrite.Drawing(name, size=(svgWidht, svgHeight),
                                      profile='full', debug=True)
         # set user coordinate space
         self._dwg.viewbox(width=width, height=height)
         self._inkscape = Inkscape(self._dwg)
-        self.grid((width, height))
+        
+        self._gLayer = self._inkscape.layer(label="Grid", locked=True)
+        self._dwg.add(self._gLayer)        
+        
         self._tLayer = self._inkscape.layer(label="Track", locked=True)
         self._dwg.add(self._tLayer)
         self._cLayer = self._inkscape.layer(label="Cut", locked=True)
@@ -45,9 +48,10 @@ class Panel(object):
         self._size=(width, height)
         self._paintable=[]
 
-    def grid(self, size):
-        layer = self._inkscape.layer(label="GridLayer", locked=True)
-        self._dwg.add(layer)
+    def grid(self, size=None):
+        if size == None:
+            size=self._size
+        layer = self._gLayer
         patternSmall = self._dwg.defs.add(self._dwg.pattern(
             size=(GRID_SIZE, GRID_SIZE), patternUnits="userSpaceOnUse"))
         path = 'M {} 0 L 0 0 0 {}'.format(GRID_SIZE, GRID_SIZE)
@@ -64,6 +68,12 @@ class Panel(object):
             0, 0, 200, '%'), stroke_width=0.2, fill="none"))
         layer.add(self._dwg.rect(size=size, fill="white"))
         layer.add(self._dwg.rect(size=size, fill=patternBig.get_paint_server()))
+
+    def margin(self,margin=10,radius=0):
+        width, height = self._size
+        rectSize=(width-2*margin,height-2*margin)
+        rect = self._dwg.rect(insert=(margin,margin),size=rectSize,fill="none", stroke_width=0.2, stroke=COLOR_ENGRAVE)
+        self._oLayer.add(rect)
 
     def register(self, element:BaseElement):
         if element in self._paintable:
