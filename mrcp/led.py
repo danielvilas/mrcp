@@ -30,6 +30,9 @@ class Led(BaseElement):
                     stroke_width=0.2, fill="none")
         cutLayer.add(circle)
 
+        circle = dwg.circle(center=pos, r=LED_SIZE/2, stroke="none",
+                            stroke_width=0.2, fill="white")
+        self._panel._tLayer.add(circle)
         return super().paint()
 
 def searchLed(panel,pos=Point(0,0)) -> Led:
