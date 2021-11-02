@@ -9,8 +9,8 @@ def pointC(pos=(0,0),delta=(0,0), adjust=(0,0)):
     x, y =pos
     dx, dy = delta
     ax, ay= adjust
-    ay=ay+2.5
-    ax=ax+2.5
+    ay=ay+GRID_SIZE/2
+    ax=ax+GRID_SIZE/2
     xf=(x+dx)*GRID_SIZE+ax
     yf=(y+dy)*GRID_SIZE+ay
     return (xf,yf)
@@ -21,7 +21,7 @@ def pointH(pos=(0,0),delta=(0,0),adjust=(0,0)):
         print("Converting Point to Tuple: (", pos._x,",",pos._y,") ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
         pos=(pos._x,pos._y)
     ax,ay=adjust
-    return pointC(pos,delta,(ax-2.5,ay))
+    return pointC(pos,delta,(ax-GRID_SIZE/2,ay))
 
 
 def pointV(pos=(0,0),delta=(0,0), adjust=(0,0)):
@@ -30,7 +30,7 @@ def pointV(pos=(0,0),delta=(0,0), adjust=(0,0)):
         print("Converting Point to Tuple: (", pos._x,",",pos._y,") ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
         pos=(pos._x,pos._y)
     ax,ay=adjust
-    return pointC(pos,delta,(ax,ay-2.5))
+    return pointC(pos,delta,(ax,ay-GRID_SIZE/2))
 
 def movePoint(pos=(0,0),delta=(0,0)):
     if isinstance(pos,Point):
