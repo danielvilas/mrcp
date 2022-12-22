@@ -6,8 +6,9 @@ from mrcp.switch import *
 from mrcp.led import *
 
 class HalfTurnout(BaseElement):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, thrownTrackColor=None, up=True, right=True, vertical=False,closedColor=CLOSED_LED_COLOR,thrownColor=THROWN_LED_COLOR) -> None:
+    def __init__(self, pos=(0, 0), color=None, thrownTrackColor=None, up=True, right=True, vertical=False,closedColor=None,thrownColor=None) -> None:
         super().__init__(pos=pos, color=color)
+        
         if thrownTrackColor==None:
             thrownTrackColor=color;
 
@@ -22,6 +23,15 @@ class HalfTurnout(BaseElement):
 
 
     def paint(self):
+        if (self._color is None):
+            self._color = self._config.COLOR_TRACK_DEFAULT
+        if (self._thrownTrack._color is None):
+            self._thrownTrack._color = self._config.COLOR_TRACK_DEFAULT
+        if( self._ledCl._color is None):
+            self._ledCl._color= self._config.CLOSED_LED_COLOR
+        if( self._ledTh._color is None):
+            self._ledTh._color= self._config.THROWN_LED_COLOR
+
         super().paint()
         if self._vertical:
             self.paintVertical()
@@ -76,7 +86,7 @@ class HalfTurnout(BaseElement):
         cutLayer = self._panel._cLayer
         ledLayer = self._panel._lLayer
 
-        swSize = SWITH_SIZE_H
+        swSize = self._config.SWITH_SIZE_H
         self.drawHalfTurnout(dwg, stPoint, cutLayer, ledLayer, swPoint, thPoint, clPoint)
 
     def paintHorizontal(self):
@@ -110,7 +120,7 @@ class HalfTurnout(BaseElement):
         cutLayer = self._panel._cLayer
         ledLayer = self._panel._lLayer
 
-        swSize = SWITH_SIZE
+        swSize = self._config.SWITH_SIZE
         self.drawHalfTurnout(dwg, stPoint, cutLayer, ledLayer, swPoint, thPoint, clPoint)
 
     def drawHalfTurnout(self, dwg, stPoint, cutLayer, ledLayer, swPoint, thPoint, clPoint):
@@ -129,15 +139,15 @@ class HalfTurnout(BaseElement):
         if isinstance(clPoint, tuple):
             print("tuple clPoint on drawHalfTurnout")
         else:
-            clPoint=clPoint.toCoords()
+            clPoint=clPoint.toCoords(self._config)
         if isinstance(swPoint, tuple):
             print("tuple swPoint on drawHalfTurnout")
         else:
-            swPoint=swPoint.toCoords()
+            swPoint=swPoint.toCoords(self._config)
         if isinstance(thPoint, tuple):
             print("tuple thPoint on drawHalfTurnout")
         else:
-            thPoint=thPoint.toCoords()
+            thPoint=thPoint.toCoords(self._config)
 
 
         # Thrown Led

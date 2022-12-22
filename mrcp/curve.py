@@ -3,7 +3,7 @@ from mrcp.points import *
 from mrcp.track import *
 
 class Curve(BaseElement):
-    def __init__(self, pos=(0,0), color=COLOR_TRACK_DEFAULT,radius=2,left=True, up=True) -> None:
+    def __init__(self, pos=(0,0), color=None,radius=2,left=True, up=True) -> None:
         super().__init__(pos=pos, color=color)
         self._radius=radius
         self._left=left
@@ -16,6 +16,8 @@ class Curve(BaseElement):
         return super().attach(panel)
 
     def paint(self):
+        if self._color is None:
+            self._color= self._config.COLOR_TRACK_DEFAULT
         delta1=1+2*self._radius;
         delta2=2*(self._radius-1);
 
@@ -56,14 +58,14 @@ class Curve(BaseElement):
         self._tracks[2]._end=sb
         self._tracks[2].paint()
     
-        circle=self._panel._dwg.circle(center=pa.toCoords(place='c'),r=TRACK_SIZE/2,stroke="none", fill=self._color)
+        circle=self._panel._dwg.circle(center=pa.toCoords(self._config,place='c'),r=self._config.TRACK_SIZE/2,stroke="none", fill=self._color)
         self._panel._tLayer.add(circle)
-        circle=self._panel._dwg.circle(center=pb.toCoords(place='c'),r=TRACK_SIZE/2,stroke="none", fill=self._color)
+        circle=self._panel._dwg.circle(center=pb.toCoords(self._config,place='c'),r=self._config.TRACK_SIZE/2,stroke="none", fill=self._color)
         self._panel._tLayer.add(circle)
 
 
 class OutCurve(BaseElement):
-    def __init__(self, pos=(0,0), color=COLOR_TRACK_DEFAULT,right=True, up=True, vertical=False) -> None:
+    def __init__(self, pos=(0,0), color=None,right=True, up=True, vertical=False) -> None:
         super().__init__(pos=pos, color=color)
         self._right=right
         self._up=up
@@ -77,6 +79,8 @@ class OutCurve(BaseElement):
 
 
     def paint(self):
+        if self._color is None:
+            self._color= self._config.COLOR_TRACK_DEFAULT
         super().paint()
         dy = 1
         if(self._up):
@@ -114,7 +118,7 @@ class OutCurve(BaseElement):
         self._tracks[1]._pos=thHalfPoint
         self._tracks[1]._end=thPoint
 
-        circle = self._panel._dwg.circle(center=thPoint.toCoords(), r=TRACK_SIZE/2, fill=self._color)
+        circle = self._panel._dwg.circle(center=thPoint.toCoords(self._config), r=self._config.TRACK_SIZE/2, fill=self._color)
         self._panel._tLayer.add(circle)
         for track in self._tracks:
             track.paint()

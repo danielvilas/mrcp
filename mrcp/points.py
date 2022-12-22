@@ -1,7 +1,7 @@
 from mrcp.config import *
 import sys
 
-def pointC(pos=(0,0),delta=(0,0), adjust=(0,0)):
+def pointC(config,pos=(0,0),delta=(0,0), adjust=(0,0)):
     if isinstance(pos, Point):
         frame = sys._getframe(1)
         print("Converting Point to Tuple: (", pos._x,",",pos._y,") ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
@@ -9,28 +9,28 @@ def pointC(pos=(0,0),delta=(0,0), adjust=(0,0)):
     x, y =pos
     dx, dy = delta
     ax, ay= adjust
-    ay=ay+GRID_SIZE/2
-    ax=ax+GRID_SIZE/2
-    xf=(x+dx)*GRID_SIZE+ax
-    yf=(y+dy)*GRID_SIZE+ay
+    ay=ay+config.GRID_SIZE/2
+    ax=ax+config.GRID_SIZE/2
+    xf=(x+dx)*config.GRID_SIZE+ax
+    yf=(y+dy)*config.GRID_SIZE+ay
     return (xf,yf)
 
-def pointH(pos=(0,0),delta=(0,0),adjust=(0,0)):
+def pointH(config,pos=(0,0),delta=(0,0),adjust=(0,0)):
     if isinstance(pos, Point):
         frame = sys._getframe(1)
         print("Converting Point to Tuple: (", pos._x,",",pos._y,") ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
         pos=(pos._x,pos._y)
     ax,ay=adjust
-    return pointC(pos,delta,(ax-GRID_SIZE/2,ay))
+    return pointC(pos,delta,(ax-config.GRID_SIZE/2,ay))
 
 
-def pointV(pos=(0,0),delta=(0,0), adjust=(0,0)):
+def pointV(config,pos=(0,0),delta=(0,0), adjust=(0,0)):
     if isinstance(pos, Point):
         frame = sys._getframe(1)
         print("Converting Point to Tuple: (", pos._x,",",pos._y,") ",frame.f_code.co_name,frame.f_code.co_filename,frame.f_lineno)
         pos=(pos._x,pos._y)
     ax,ay=adjust
-    return pointC(pos,delta,(ax,ay-GRID_SIZE/2))
+    return pointC(pos,delta,(ax,ay-config.GRID_SIZE/2))
 
 def movePoint(pos=(0,0),delta=(0,0)):
     if isinstance(pos,Point):
@@ -52,34 +52,34 @@ class Point(object):
         dx,dy=delta
         return Point(self._x+dx,self._y+dy, self._pos)
 
-    def toCoords(self,adjust=(0,0),place=None):
+    def toCoords(self,config,adjust=(0,0),place=None):
         if place is None and self._pos != None:
             place = self._pos
         ax,ay=adjust
         if place==None or place=='c':
-            ax+=GRID_SIZE/2
-            ay+=GRID_SIZE/2
+            ax+=config.GRID_SIZE/2
+            ay+=config.GRID_SIZE/2
         elif place=='t' or place=='v':
-            ax+=GRID_SIZE/2
+            ax+=config.GRID_SIZE/2
         elif place=='l' or place=='h':
-            ay+=GRID_SIZE/2
+            ay+=config.GRID_SIZE/2
         elif place=='b':
-            ax+=GRID_SIZE/2
-            ay+=GRID_SIZE
+            ax+=config.GRID_SIZE/2
+            ay+=config.GRID_SIZE
         elif place=='r':
-            ay+=GRID_SIZE/2
-            ax+=GRID_SIZE
+            ay+=config.GRID_SIZE/2
+            ax+=config.GRID_SIZE
         elif place=='bl':
-            ay+=GRID_SIZE
+            ay+=config.GRID_SIZE
         elif place=='br':
-            ay+=GRID_SIZE
-            ax+=GRID_SIZE
+            ay+=config.GRID_SIZE
+            ax+=config.GRID_SIZE
         elif place=='tl':
             ay+=0
         elif place=='tr':
-            ax+=GRID_SIZE
-        xf=(self._x)*GRID_SIZE+ax
-        yf=(self._y)*GRID_SIZE+ay
+            ax+=config.GRID_SIZE
+        xf=(self._x)*config.GRID_SIZE+ax
+        yf=(self._y)*config.GRID_SIZE+ay
         return (xf,yf)
 
         

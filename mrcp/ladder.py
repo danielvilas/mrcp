@@ -4,7 +4,7 @@ from mrcp.panel import *
 from mrcp.points import *
 
 class Ladder(BaseElement):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT,thrownTrackColor=None, up=True, right=True, vertical=False,closedColor=CLOSED_LED_COLOR,thrownColor=THROWN_LED_COLOR) -> None:
+    def __init__(self, pos=(0, 0), color=None,thrownTrackColor=None, up=True, right=True, vertical=False,closedColor=None,thrownColor=None) -> None:
         super().__init__(pos=pos, color=color)
         if thrownTrackColor== None:
             thrownTrackColor=color      
@@ -25,6 +25,9 @@ class Ladder(BaseElement):
         return super().attach(panel)
 
     def paint(self):
+        if self._color is None:
+            self._color= self._config.COLOR_TRACK_DEFAULT
+
         incX=-4
         if self._right:
             incX=4
@@ -37,6 +40,8 @@ class Ladder(BaseElement):
         ay=0
 
         for element in self._steps:
+            if element._color is None:
+                element._color = self._config.COLOR_TRACK_DEFAULT
             element._pos=movePoint(self._pos,(ax,ay))
             element.paint()
             ax += incX

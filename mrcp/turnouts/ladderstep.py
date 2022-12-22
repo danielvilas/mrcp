@@ -3,7 +3,7 @@ from mrcp.points import *
 from .halfturnout import *
  
 class LadderStep(HalfTurnout):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False,closedColor=CLOSED_LED_COLOR,thrownColor=THROWN_LED_COLOR) -> None:
+    def __init__(self, pos=(0, 0), color=None, up=True, right=True, vertical=False,closedColor=None,thrownColor=None) -> None:
         #Interchange the color
         super().__init__(pos=pos, color=color, up=up, right=right, vertical=vertical,closedColor=thrownColor,thrownColor=closedColor)
 
@@ -77,5 +77,5 @@ class LadderStep(HalfTurnout):
         cutLayer = self._panel._cLayer
         ledLayer = self._panel._lLayer
 
-        swSize = SWITH_SIZE
+        swSize = self._config.SWITH_SIZE
         self.drawHalfTurnout(dwg, stPoint, cutLayer, ledLayer, swPoint, thPoint, clPoint)

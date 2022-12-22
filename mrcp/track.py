@@ -3,7 +3,7 @@ from mrcp.points import *
 import math
 
 class Track(BaseElement):
-    def __init__(self, pos=Point(0,0), color=COLOR_TRACK_DEFAULT, end=Point(0,0)) -> None:
+    def __init__(self, pos=Point(0,0), color=None, end=Point(0,0)) -> None:
         super().__init__(pos=pos, color=color)
         self._end=end
 
@@ -31,6 +31,8 @@ class Track(BaseElement):
             end.pos_='c'
 
     def paint(self):
+        if self._color is None:
+            self._color = self._config.COLOR_TRACK_DEFAULT
         if isinstance(self._end, tuple):
             print("track end is tuple")
             self._end=Point(0,0)
@@ -38,16 +40,17 @@ class Track(BaseElement):
             print("track pos is tuple")
             self._pos=Point(0,0)
     
-        end = self._end.toCoords()
+        end = self._end.toCoords(self._config)
+        
         x0,y0=end
-        start = self._pos.toCoords()
+        start = self._pos.toCoords(self._config)
         xf,yf=start
         dx=xf-x0
         dy=yf-y0
         if dx==0 and dy == 0 :return
         mx=0
         my=0
-        t=TRACK_SIZE/2
+        t=self._config.TRACK_SIZE/2
         if dx==0:
             mx=t
             my=0

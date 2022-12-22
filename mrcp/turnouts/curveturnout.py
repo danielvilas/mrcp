@@ -4,7 +4,7 @@ from .halfturnout import *
 
 
 class CurveTurnOut_2_3(BaseElement):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, up=True, right=True, vertical=False) -> None:
+    def __init__(self, pos=(0, 0), color=None, up=True, right=True, vertical=False) -> None:
         super().__init__(pos=pos, color=color)
         self._up = up
         self._right = right
@@ -17,6 +17,8 @@ class CurveTurnOut_2_3(BaseElement):
     def attach(self, panel):
         self._halfTurnout.attach(panel)
         for track in self._tracks:
+            if track._color is None:
+                track._color = self._config.COLOR_TRACK_DEFAULT
             track.attach(panel)
 
         return super().attach(panel)
@@ -43,56 +45,56 @@ class CurveTurnOut_2_3(BaseElement):
         if isinstance(thEnd, tuple):
             print("tuple thEnd on paintCurves")
         else:
-            thEnd=thEnd.toCoords()
+            thEnd=thEnd.toCoords(self._config)
         if isinstance(thPoint, tuple):
             print("tuple thPoint on paintCurves")
         else:
-            thPoint=thPoint.toCoords()
+            thPoint=thPoint.toCoords(self._config)
 
         if isinstance(diag1Start, tuple):
             print("tuple diag1Start on paintCurves")
         else:
-            diag1Start=diag1Start.toCoords()
+            diag1Start=diag1Start.toCoords(self._config)
         if isinstance(diag2Start, tuple):
             print("tuple diag2Start on paintCurves")
         else:
-            diag2Start=diag2Start.toCoords()
+            diag2Start=diag2Start.toCoords(self._config)
         if isinstance(clPoint, tuple):
             print("tuple clPoint on paintCurves")
         else:
-            clPoint=clPoint.toCoords()
+            clPoint=clPoint.toCoords(self._config)
         if isinstance(clEnd, tuple):
             print("tuple clEnd on paintCurves")
         else:
-            clEnd=clEnd.toCoords()
+            clEnd=clEnd.toCoords(self._config)
 
         if isinstance(diag1End, tuple):
             print("tuple diag1End on paintCurves")
         else:
-            diag1End=diag1End.toCoords()
+            diag1End=diag1End.toCoords(self._config)
         if isinstance(diag2End, tuple):
             print("tuple diag2End on paintCurves")
         else:
-            diag2End=diag2End.toCoords()
+            diag2End=diag2End.toCoords(self._config)
 
 
         if isinstance(outR2, tuple):
             print("tuple outR2 on paintCurves")
         else:
-            outR2=outR2.toCoords()
+            outR2=outR2.toCoords(self._config)
         if isinstance(outR3, tuple):
             print("tuple outR3 on paintCurves")
         else:
-            outR3=outR3.toCoords()
+            outR3=outR3.toCoords(self._config)
 
 
-        circle = dwg.circle(center=diag1End, r=TRACK_SIZE/2, stroke="none", fill=color)
+        circle = dwg.circle(center=diag1End, r=self._config.TRACK_SIZE/2, stroke="none", fill=color)
         layer.add(circle)
-        circle = dwg.circle(center=diag2End, r=TRACK_SIZE/2, stroke="none", fill=color)
+        circle = dwg.circle(center=diag2End, r=self._config.TRACK_SIZE/2, stroke="none", fill=color)
         layer.add(circle)
-        circle = dwg.circle(center=diag1Start, r=TRACK_SIZE/2, stroke="none", fill=color)
+        circle = dwg.circle(center=diag1Start, r=self._config.TRACK_SIZE/2, stroke="none", fill=color)
         layer.add(circle)
-        circle = dwg.circle(center=diag2Start, r=TRACK_SIZE/2, stroke="none", fill=color)
+        circle = dwg.circle(center=diag2Start, r=self._config.TRACK_SIZE/2, stroke="none", fill=color)
         layer.add(circle)
 
     def paintHorizontal(self):

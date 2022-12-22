@@ -4,7 +4,7 @@ from .halfturnout import *
 from mrcp.curve import OutCurve
 
 class Turnout(BaseElement):
-    def __init__(self, pos=(0, 0), color=COLOR_TRACK_DEFAULT, thrownTrackColor=None, up=True, right=True, vertical=False) -> None:
+    def __init__(self, pos=(0, 0), color=None, thrownTrackColor=None, up=True, right=True, vertical=False) -> None:
         super().__init__(pos=pos, color=color)
         self._up = up
         self._right = right
@@ -20,6 +20,8 @@ class Turnout(BaseElement):
         self._track=Track(color=color)
 
     def paint(self):
+        if self._color is None:
+            self._color= self._config.COLOR_TRACK_DEFAULT
         super().paint()
         if(self._vertical):
             if(self._up):
