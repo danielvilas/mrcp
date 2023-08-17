@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: all",
-            "type": "python",
-            "request": "launch",
-            "program": "all.py",
-            "console": "integratedTerminal"
-        }
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "program": "mrcp-examples/dist/index.js",
+        "preLaunchTask": "npm: build"
+      }
     ]
 }

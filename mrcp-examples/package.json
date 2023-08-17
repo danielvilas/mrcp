@@ -1,0 +1,28 @@
+{
+  "name": "mrcp-examples",
+  "version": "1.0.0",
+  "description": "Class to hold the layout model in memory",
+  "main": "./dist/index.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "run": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//danielvilas/mrcp"
+  },
+  "author": "Daniel Vilas",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "mrcp-layout-model": "^1.0.0",
+    "mrcp-painter-tco": "^1.0.0"
+  }
+}

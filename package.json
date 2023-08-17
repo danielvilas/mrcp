@@ -1,0 +1,30 @@
+{
+  "name": "mrcp",
+  "version": "1.0.0",
+  "description": "Tools for creating Train Model Layouts",
+  "scripts": {
+    "build": "npm --workspaces run build",
+    "run-samples": "npm run build && npm -w mrcp-examples run run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces":[
+    "mrcp-layout-model",
+    "mrcp-examples",
+    "mrcp-painter-tco"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielvilas/mrcp.git"
+  },
+  "keywords": [
+    "train",
+    "model",
+    "layout"
+  ],
+  "author": "Daniel Vilas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielvilas/mrcp/issues"
+  },
+  "homepage": "https://github.com/danielvilas/mrcp#readme"
+}

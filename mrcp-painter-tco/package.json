@@ -1,0 +1,32 @@
+{
+  "name": "mrcp-painter-tco",
+  "version": "1.0.0",
+  "description": "Train Control Office",
+  "main": "dist/index.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//danielvilas/mrcp"
+  },
+  "author": "Daniel Vilas",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.1",
+    "@types/node": "^20.5.0",
+    "@types/snapsvg": "^0.5.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "mrcp-layout-model": "^1.0.0",
+    "snapsvg": "^0.5.1",
+    "xmlserializer": "^0.6.1"
+  }
+}
