@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Train Control Office",
   "main": "dist/index.js",
-  "types": "dist/main.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],

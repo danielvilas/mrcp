@@ -1,4 +1,5 @@
 import { Layout } from 'mrcp-layout-model'
+import {t_BasicHint, BasicHint} from 'mrcp-layout-model'
 import * as fs from 'fs'
 import * as path from 'path';
 
@@ -20,7 +21,7 @@ global.document=jsEnv.window.document
 import Snap = require("snapsvg")
 import xmlserializer=require('xmlserializer')
 type Size={width: number; height: number;}
-
+import * as cts from './constants'
 
 export type PainterTcoOptions = {
     name:string
@@ -29,7 +30,8 @@ export type PainterTcoOptions = {
     outFile?:string
     grid?:boolean
     markStart?:boolean,
-    gridBase?:number
+    gridBase?:number,
+    trackSize?:number
 }
 
 export const PainterTcoDefaultOptions:PainterTcoOptions={
@@ -40,6 +42,7 @@ export const PainterTcoDefaultOptions:PainterTcoOptions={
     grid:false,
     markStart:false,
     gridBase:5,
+    trackSize:3
 }
 
 
@@ -50,19 +53,19 @@ export type PanelLayers={[key in PanelLayersKind]?:Snap.Paper}
 export class PainterTco {
 
     public constructor(_options:PainterTcoOptions) {
-        this.options={...PainterTcoDefaultOptions, ..._options}
+        this._options={...PainterTcoDefaultOptions, ..._options}
     }
 
-    private options:PainterTcoOptions
+    private _options: PainterTcoOptions;
     private svg:string
 
-    private layers:PanelLayers
-    private paper:Snap.Paper;
+    private _layers: PanelLayers;
+    private _paper: Snap.Paper;
 
     public paint(layout:Layout): void {
-        this.layers={};
+        this._layers={};
         let paper = Snap(this.options.size.width/10+"cm",this.options.size.height/10+"cm");
-        this.paper=paper;
+        this._paper=paper;
         paper.attr({viewBox:[0,0,this.options.size.width,this.options.size.height].join(',')})
         panelLayersKind.map((value)=>{
             let grp = paper.group();
@@ -72,6 +75,14 @@ export class PainterTco {
         });
         
         if(this.grid)this.paintGrid();
+        let elments= layout.elements
+        elments.map((el)=>{
+            let h=el.hints(cts.ns);
+            if(h.length>0 && h[0] instanceof TcoPainterHint){
+                let th:TcoPainterHint<t_BasicHint>=h[0] as TcoPainterHint<t_BasicHint>;
+                th.paint(this)
+            }
+        })
 
         this.svg = xmlserializer.serializeToString(paper.node);        
     }
@@ -119,10 +130,39 @@ export class PainterTco {
         });
     }
 
+    public get options(): PainterTcoOptions {
+        return this._options;
+    }
 
+    public get layers(): PanelLayers {
+        return this._layers;
+    }
+    
+    public get paper(): Snap.Paper {
+        return this._paper;
+    }
+    
+}
+
+export abstract class TcoPainterHint<T extends t_BasicHint> extends BasicHint<T>{
+    constructor(hint:T){
+        super(cts.ns,hint)
+        this.dirty=true;
+    }
+
+    protected dirty:boolean
+
+    public paint(paper:PainterTco):void{
+        if(!this.dirty)return;
+        this.paintSelf(paper);
+        this.dirty=false
+    }
+
+    abstract paintSelf(paper:PainterTco);
 }
 
 export function endPainterProcess():void{
     jsEnv.window.close();
     global.window.close();
 }
+

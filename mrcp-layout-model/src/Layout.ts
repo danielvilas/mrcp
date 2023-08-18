@@ -51,4 +51,10 @@ export class Layout{
         return e;
     }
 
+    public get elements():TrackElement[]{
+        let ret= []
+        Object.keys(this._elements).map((key)=>ret.push(this._elements[key]));
+        return ret
+    }
+
 }

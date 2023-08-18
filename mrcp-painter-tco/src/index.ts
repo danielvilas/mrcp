@@ -1,2 +1,3 @@
 export * from './PainterTco'
-export * from './types'
+export * from './Point'
+export * from './Curves'
