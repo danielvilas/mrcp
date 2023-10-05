@@ -1,3 +1,5 @@
 export * from './PainterTco'
 export * from './Point'
 export * from './Curves'
+export * from './Turnouts'
+export * from './Types'

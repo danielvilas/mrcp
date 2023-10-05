@@ -22,16 +22,20 @@ import Snap = require("snapsvg")
 import xmlserializer=require('xmlserializer')
 type Size={width: number; height: number;}
 import * as cts from './constants'
+import { TcoPoint, tcoPoint } from './Point';
+import { t_TcoBasicHint, t_TcoPlaces, t_TcoPoint } from './Types';
 
 export type PainterTcoOptions = {
     name:string
     format?: 'svg'|'png'
     size?:Size
+    sizeInGrid?:boolean
     outFile?:string
     grid?:boolean
     markStart?:boolean,
     gridBase?:number,
-    trackSize?:number
+    trackSize?:number,
+    trackColor?:string
 }
 
 export const PainterTcoDefaultOptions:PainterTcoOptions={
@@ -39,10 +43,12 @@ export const PainterTcoDefaultOptions:PainterTcoOptions={
     format: 'svg',
     size:{height:100,width:100},
     outFile:"out.svg",
+    sizeInGrid:false,
     grid:false,
     markStart:false,
     gridBase:5,
-    trackSize:3
+    trackSize:3,
+    trackColor:"black"
 }
 
 
@@ -64,6 +70,10 @@ export class PainterTco {
 
     public paint(layout:Layout): void {
         this._layers={};
+        if(this._options.sizeInGrid){
+            this.options.size.width=this.options.size.width*this.options.gridBase
+            this.options.size.height=this.options.size.height*this.options.gridBase
+        }
         let paper = Snap(this.options.size.width/10+"cm",this.options.size.height/10+"cm");
         this._paper=paper;
         paper.attr({viewBox:[0,0,this.options.size.width,this.options.size.height].join(',')})
@@ -79,7 +89,7 @@ export class PainterTco {
         elments.map((el)=>{
             let h=el.hints(cts.ns);
             if(h.length>0 && h[0] instanceof TcoPainterHint){
-                let th:TcoPainterHint<t_BasicHint>=h[0] as TcoPainterHint<t_BasicHint>;
+                let th:TcoPainterHint<t_TcoBasicHint>=h[0] as TcoPainterHint<t_TcoBasicHint>;
                 th.paint(this)
             }
         })
@@ -141,10 +151,19 @@ export class PainterTco {
     public get paper(): Snap.Paper {
         return this._paper;
     }
+
+    public circle(point:(TcoPoint|t_TcoPoint),r:number,pos?:t_TcoPlaces):Snap.Element{
+        let [x,y] = tcoPoint(point).toCoords(this.options,pos);
+        return this.paper.circle(x,y,r);
+    }
     
+    public markPoint(point:(t_TcoPoint | TcoPoint)){    
+        let circle=this.circle(point,0.5).attr({stroke:"red",strokeWidth:0.2,fill:"yellow"})
+        this.layers.led.add(circle)
+    }
 }
 
-export abstract class TcoPainterHint<T extends t_BasicHint> extends BasicHint<T>{
+export abstract class TcoPainterHint<T extends (t_TcoBasicHint)> extends BasicHint<T>{
     constructor(hint:T){
         super(cts.ns,hint)
         this.dirty=true;
@@ -155,6 +174,9 @@ export abstract class TcoPainterHint<T extends t_BasicHint> extends BasicHint<T>
     public paint(paper:PainterTco):void{
         if(!this.dirty)return;
         this.paintSelf(paper);
+        if(paper.options.markStart){
+            paper.markPoint(this.hint.pos)
+        }
         this.dirty=false
     }
 

@@ -1,6 +1,7 @@
 import { TrackElement, t_BasicHint } from "mrcp-layout-model"
-import { TcoPoint, t_TcoBase, t_TcoPoint, tcoPoint } from "./Point"
+import { TcoPoint, tcoPoint } from "./Point"
 import { PainterTco, TcoPainterHint } from "./PainterTco"
+import { t_TcoBase, t_TcoPoint } from "./Types"
 
 export type t_track=t_TcoBase&{
     end:t_TcoPoint | TcoPoint

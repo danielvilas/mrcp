@@ -1,17 +1,7 @@
 import { PainterTcoOptions } from "./PainterTco"
+import { t_TcoPlaces, t_TcoPoint } from "./Types";
 
-export type t_TcoPlaces='center'|'top'|'bottom'|'left'|'right'|'top-left'|'top-rigth'|'bottom-left'|'bottom-right'
 
-export type t_TcoBase={
-    pos: t_TcoPoint | TcoPoint
-    color:string
-}
-
-export type t_TcoPoint={
-    x:number,
-    y:number,
-    pos?:t_TcoPlaces
-}
 
 export class TcoPoint{
     private _point: t_TcoPoint;
