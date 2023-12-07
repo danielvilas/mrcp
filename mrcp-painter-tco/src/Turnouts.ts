@@ -1,6 +1,6 @@
 import { PainterTco, PainterTcoOptions, TcoPainterHint } from "./PainterTco"
 import { TcoPoint, tcoPoint } from "./Point"
-import { initTrack, paintTrack, t_track } from "./Track"
+import { TcoTrackHint, initTrack, paintTrack, t_track } from "./Track"
 import { t_TcoBasicHint } from "./Types"
 
 export type t_BaseTurnOutHint = t_TcoBasicHint&{
@@ -23,7 +23,9 @@ export type t_HalfTurnOutHint = t_TcoBasicHint&t_BaseTurnOutHint&{
     thrownColor?:string
 }
 
-const defToHint:t_HalfTurnOutHint={
+export type t_TurnOutHint=t_HalfTurnOutHint 
+
+const defaultHalfToHint:t_HalfTurnOutHint={
     pos:undefined,
     type:undefined,
     right:true,
@@ -31,6 +33,90 @@ const defToHint:t_HalfTurnOutHint={
     vertical:false
 }
 
+export class TcoTurnOutHint extends TcoPainterHint<t_TurnOutHint>{
+    private halfTurnOut:TcoHalfTurnOutHint
+    private outCurve:TcoOutCurveHint
+    private track:t_track
+
+    constructor(hint:t_HalfTurnOutHint){
+        super({...defaultHalfToHint, ...hint})
+    
+        this.halfTurnOut=new TcoHalfTurnOutHint({...this.hint});
+        this.outCurve=new TcoOutCurveHint({...this.hint});
+        this.track={pos:undefined,end:undefined,color:this.hint.color}
+    }
+    paintSelf(paper: PainterTco) {
+        let pos = tcoPoint(this.hint.pos)
+        if(this.hint.color==undefined)
+            this.hint.color=paper.options.trackColor;
+        if(this.hint.vertical){
+            if(this.hint.up){
+                this.halfTurnOut.hint.pos =pos.move({x:0, y:4})
+            }else{
+                this.halfTurnOut.hint.pos = this.hint.pos
+            }
+        }else{
+            if(this.hint.right){
+                this.halfTurnOut.hint.pos = this.hint.pos
+            }else{
+                this.halfTurnOut.hint.pos = pos.move({x:4, y:0})
+            }
+        }
+        this.halfTurnOut.paintSelf(paper)
+
+        let dx = 0
+        let dy = 0
+        if (this.hint.vertical){
+            dx = -1
+            dy = 4
+            if (this.hint.right){
+                dx = 1
+            }
+            if (this.hint.up){
+                dy = 4
+            }
+        }else{
+            dx = 0
+            dy = 1
+            if (this.hint.right){
+                dx = 4
+            }
+            if (this.hint.up){
+                dy = -1
+            }
+        }
+        this.outCurve.hint.pos=pos.move({x:dx,y:dy})
+
+        this.outCurve.paintSelf(paper)
+
+        let start:TcoPoint
+        let end:TcoPoint
+        if (this.hint.vertical){
+            start = pos.move( {x:0, y:4})
+            end = pos.move( {x:0, y:8})
+            if (this.hint.up){
+                start = pos.move( {x:0, y:0})
+                end = pos.move( {x:0, y:4})
+            }
+            start.point.pos='top'
+            end.point.pos='top'
+        }else{ 
+            start = pos.move({x:0, y:0})
+            end = pos.move({x:4, y:0})
+            if (this.hint.right){
+                start = pos.move({x:4, y:0})
+                end = pos.move({x:8, y:0})
+            }
+            start.point.pos='left'
+            end.point.pos='left'
+        }
+        this.track.pos=start
+        this.track.end=end
+        initTrack(this.track)
+        paintTrack(paper,this.track)
+    }
+
+}
 
 export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
 
@@ -40,7 +126,7 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
     private ledCl:{}
     private ledTh:{}
     constructor(hint:t_HalfTurnOutHint){
-        super({...defToHint, ...hint})
+        super({...defaultHalfToHint, ...hint})
         
         this.mainTrack={pos:undefined,end:undefined,color:this.hint.color}
         this.thrownTrack={pos:undefined,end:undefined,color:this.hint.thrownTrackColor}
@@ -131,7 +217,6 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
         let thPoint = pos.move({x:0,y:dy})
         thPoint.point.pos='left'
         let clPoint = pos.move({x:0,y:0})
-        if (this.hint.color == undefined)
         clPoint.point.pos='left'
         let stPoint = pos.move({x:3,y:0})
         stPoint.point.pos='right'

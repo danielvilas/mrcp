@@ -1,9 +1,8 @@
 import { Layout, TrackElement } from "mrcp-layout-model";
-import { PainterTco, PainterTcoOptions, TcoPoint,TcoHalfTurnOutHint, TcoOutCurveHint } from "mrcp-painter-tco";
+import { PainterTco, PainterTcoOptions, TcoPoint,TcoHalfTurnOutHint, TcoOutCurveHint, TcoTurnOutHint } from "mrcp-painter-tco";
 
-var l:Layout;
 
-function halfPartsHorizontal(){
+function halfPartsHorizontal(l:Layout){
     let turn:TrackElement = l.createElement("hth-1");
     turn.addHint(new TcoHalfTurnOutHint({type:'halfTurnOut',pos:new TcoPoint({x:1,y:5}),up:true,right:true}))
     turn= l.createElement("hth-2");
@@ -26,7 +25,7 @@ function halfPartsHorizontal(){
     turn.addHint(new TcoOutCurveHint({type:'outCurve',pos:new TcoPoint({x:6,y:10}),up:false,right:false}))
 }
 
-function halfPartsVertical(){
+function halfPartsVertical(l:Layout){
     let turn:TrackElement = l.createElement("htv-1");
     turn.addHint(new TcoHalfTurnOutHint({type:'halfTurnOut',pos:new TcoPoint({x:1,y:14}),up:false,right:true, vertical:true}))
     turn= l.createElement("htv-2");
@@ -49,19 +48,51 @@ function halfPartsVertical(){
     turn.addHint(new TcoOutCurveHint({type:'outCurve',pos:new TcoPoint({x:9,y:14}),up:false,right:false, vertical:true}))
 }
 
+function verticalTurnout(l:Layout){
+    //Composites/full Turnouts Horizontal
+    let turn:TrackElement=l.createElement("tv-1");
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:14,y:1}),up:false,right:true, vertical:true}))
+    
+    turn=l.createElement("tv-2")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:20,y:1}),up:false,right:false, vertical:true}))
 
-function build_to_layout(){
-    l = new Layout("Test Layout");
-    halfPartsHorizontal()
-    halfPartsVertical()
-//    verticalTurnout()
-//    horizontalTurnout()
+    turn=l.createElement("tv-3")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:14,y:9}),up:true,right:true, vertical:true}))
+
+    turn=l.createElement("tv-4")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:20,y:9}),up:true,right:false, vertical:true}))
+
+}
+
+function horizontalTurnout(l:Layout){
+    //Composites/full Turnouts Horizontal
+    let turn:TrackElement=l.createElement("hv-1");
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:23,y:1}),up:false,right:true, vertical:false}))
+    
+    turn=l.createElement("hv-2")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:32,y:1}),up:false,right:false, vertical:false}))
+
+    turn=l.createElement("hv-3")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:23,y:7}),up:true,right:true, vertical:false}))
+
+    turn=l.createElement("hv-4")
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:32,y:7}),up:true,right:false, vertical:false}))
+
+}
+
+function build_to_layout():Layout{
+    let l = new Layout("Test Layout");
+    halfPartsHorizontal(l)
+    halfPartsVertical(l)
+    verticalTurnout(l)
+    horizontalTurnout(l)
 //    horizontalLadder()
 //    verticalLadder()
+    return l;
 }
 
 export async function turnouts_demo():Promise<void>{
-    build_to_layout();
+    let l = build_to_layout();
     console.log("Packed: ")
     console.log(l.toJson())
 
