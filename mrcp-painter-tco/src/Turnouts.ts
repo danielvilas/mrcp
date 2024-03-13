@@ -1,5 +1,7 @@
+import { TcoLedHint, t_LedHint } from "./Led"
 import { PainterTco, PainterTcoOptions, TcoPainterHint } from "./PainterTco"
 import { TcoPoint, tcoPoint } from "./Point"
+import { TcoSwitchHint } from "./Switch"
 import { TcoTrackHint, initTrack, paintTrack, t_track } from "./Track"
 import { t_TcoBasicHint } from "./Types"
 
@@ -122,17 +124,22 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
 
     private mainTrack:t_track
     private thrownTrack:t_track
-    private switch:{}
-    private ledCl:{}
-    private ledTh:{}
+    private switch:TcoSwitchHint
+    private ledCl:TcoLedHint
+    private ledTh:TcoLedHint
     constructor(hint:t_HalfTurnOutHint){
         super({...defaultHalfToHint, ...hint})
         
         this.mainTrack={pos:undefined,end:undefined,color:this.hint.color}
         this.thrownTrack={pos:undefined,end:undefined,color:this.hint.thrownTrackColor}
-        //self._switch=Switch(color=color, vertical=not vertical)
-        //self._ledCl= Led(color=closedColor)
-        //self._ledTh= Led(color=thrownColor)
+        this.switch=new TcoSwitchHint({type:"Switch",pos:undefined,color:this.hint.color,vertical:!this.hint.vertical})
+        
+        if(this.hint.closedColor!="none"){
+            this.ledCl = new TcoLedHint({type:"Led.Closed",pos:undefined,color:this.hint.closedColor})
+        }
+        if(this.hint.closedColor!="none")
+            this.ledTh = new TcoLedHint({type:"Led.Thrown",pos:undefined,color:this.hint.thrownColor})
+        
     }
 
     setColors(cfg:PainterTcoOptions){
@@ -140,12 +147,12 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
             this.hint.color = cfg.trackColor
         if (this.thrownTrack.color == undefined)
             this.thrownTrack.color = cfg.trackColor
-        /*if( this.ledCl.color == undefined):
-            this.ledCl.color= self._config.CLOSED_LED_COLOR
-        if( this.ledTh.color == undefined):
-            this.ledTh.color= self._config.THROWN_LED_COLOR
-        }*/
+        if(this.ledCl &&  this.ledCl.hint.color == undefined)
+            this.ledCl.hint.color= cfg.closedLedColor
+        if(this.ledTh && this.ledTh.hint.color == undefined)
+            this.ledTh.hint.color= cfg.thrownLedColor
     }
+
     paintSelf(paper: PainterTco) {
         //throw new Error("Method not implemented.")
         this.setColors(paper.options)
@@ -161,9 +168,12 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
         initTrack(this.mainTrack);
         paintTrack(paper,this.mainTrack)
 
-        /*self._switch.paint()
-        self._ledCl.paint()
-        self._ledTh.paint()*/
+        /*self._switch.paint()*/
+        this.switch.paintSelf(paper)
+        //console.log("painting leds")
+        if(this.ledCl!=undefined) this.ledCl.paintSelf(paper)
+        if(this.ledTh!=undefined) this.ledTh.paintSelf(paper)
+
     }
 
     paintVertical(paper:PainterTco){
@@ -244,6 +254,12 @@ export class TcoHalfTurnOutHint extends TcoPainterHint<t_HalfTurnOutHint>{
 
         this.thrownTrack.pos=swPoint
         this.thrownTrack.end=thPoint
+
+        if(this.ledTh)this.ledTh.hint.pos=thPoint
+        if(this.ledCl)this.ledCl.hint.pos=clPoint
+
+        this.switch.hint.pos=swPoint
+
     }
 }
 

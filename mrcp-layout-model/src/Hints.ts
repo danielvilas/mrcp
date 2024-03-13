@@ -1,4 +1,4 @@
-import { TrackElement } from "./TrackElements";
+import { BaseElement } from "./TrackElements";
 
 export abstract class Hint{
 
@@ -6,13 +6,13 @@ export abstract class Hint{
         this._ns=ns;
     }
     private _ns: string;
-    private _element: TrackElement;
+    private _element: BaseElement;
     
     //Get Set
-    public get element(): TrackElement {
+    public get element(): BaseElement {
         return this._element;
     }
-    public set element(value: TrackElement) {
+    public set element(value: BaseElement) {
         this._element = value;
     }
 

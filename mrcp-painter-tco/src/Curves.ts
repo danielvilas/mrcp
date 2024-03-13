@@ -1,4 +1,4 @@
-import { TrackElement} from 'mrcp-layout-model'
+import { BaseElement, TrackElement} from 'mrcp-layout-model'
 import { PainterTco, TcoPainterHint } from './PainterTco'
 import { initTrack, paintTrack, t_track } from './Track'
 import { t_TcoBasicHint } from './Types'
@@ -21,7 +21,7 @@ export class TcoCurveHint extends TcoPainterHint<t_CurveHint>{
     }
 
     paintSelf(paper: PainterTco) {
-        let el:TrackElement = this.element;
+        let el:BaseElement = this.element as BaseElement;
         if (this.hint.color==undefined){
             this.hint.color=paper.options.trackColor;
         }

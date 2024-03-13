@@ -1,5 +1,5 @@
 import { Layout, TrackElement } from "mrcp-layout-model";
-import { PainterTco, PainterTcoOptions, TcoPoint,TcoHalfTurnOutHint, TcoOutCurveHint, TcoTurnOutHint } from "mrcp-painter-tco";
+import { PainterTco, PainterTcoOptions, TcoPoint,TcoHalfTurnOutHint, TcoOutCurveHint, TcoTurnOutHint, TcoLedHint } from "mrcp-painter-tco";
 
 
 function halfPartsHorizontal(l:Layout){
@@ -82,6 +82,8 @@ function horizontalTurnout(l:Layout){
 
 function build_to_layout():Layout{
     let l = new Layout("Test Layout");
+    let led = l.createElement("Led")
+    led.addHint(new TcoLedHint({type:"led",pos:new TcoPoint({x:25,y:10})}))
     halfPartsHorizontal(l)
     halfPartsVertical(l)
     verticalTurnout(l)
@@ -94,7 +96,7 @@ function build_to_layout():Layout{
 export async function turnouts_demo():Promise<void>{
     let l = build_to_layout();
     console.log("Packed: ")
-    console.log(l.toJson())
+    //console.log(l.toJson())
 
 
     let opts:PainterTcoOptions={

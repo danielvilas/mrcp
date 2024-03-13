@@ -35,7 +35,18 @@ export type PainterTcoOptions = {
     markStart?:boolean,
     gridBase?:number,
     trackSize?:number,
-    trackColor?:string
+    trackColor?:string,
+    closedLedColor?:string,
+    thrownLedColor?:string,
+    ledSize?:number,
+    ledMargin?:number,
+    ledColor?:string,
+    cutColor?:string,
+    engraveColor?:string,
+    switchHoleSize?:number,
+    switchHoleMarginSize?:number,
+    switchSize?:t_TcoPoint,
+    switchSizeH?:t_TcoPoint,
 }
 
 export const PainterTcoDefaultOptions:PainterTcoOptions={
@@ -47,8 +58,19 @@ export const PainterTcoDefaultOptions:PainterTcoOptions={
     grid:false,
     markStart:false,
     gridBase:5,
-    trackSize:3,
-    trackColor:"black"
+    trackSize:4,
+    trackColor:"black",
+    closedLedColor:"lime",
+    thrownLedColor:"yellow",
+    ledSize:3,
+    ledMargin:0.5,
+    ledColor:"lime",
+    cutColor:"red",
+    engraveColor:"blue",
+    switchHoleSize:6,
+    switchHoleMarginSize:12,
+    switchSize:{x:10,y:15},
+    switchSizeH:{x:15,y:10}
 }
 
 
@@ -130,7 +152,7 @@ export class PainterTco {
     }
 
     public async save():Promise<void>{
-        console.log(this.svg);
+        //console.log(this.svg);
         return new Promise<void>((resolve,reject)=>{
             fs.writeFile(path.resolve(this.options.outFile), this.svg, function (err) {
                 if (err) reject( err);

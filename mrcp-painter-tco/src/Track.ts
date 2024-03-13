@@ -1,4 +1,4 @@
-import { TrackElement, t_BasicHint } from "mrcp-layout-model"
+import { BaseElement, t_BasicHint } from "mrcp-layout-model"
 import { TcoPoint, tcoPoint } from "./Point"
 import { PainterTco, TcoPainterHint } from "./PainterTco"
 import { t_TcoBase, t_TcoPoint } from "./Types"
@@ -16,7 +16,7 @@ export class TcoTrackHint extends TcoPainterHint<t_TrackHint>{
     }
 
     paintSelf(paper: PainterTco) {
-        let el:TrackElement = this.element;
+        let el:BaseElement = this.element;
         paintTrack(paper,this.hint)
         console.log("painting: "+el.id)
     }

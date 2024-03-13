@@ -39,7 +39,7 @@ function build_curves_layout(){
 export async function curves_demo():Promise<void>{
     build_curves_layout();
     console.log("Packed: ")
-    console.log(l.toJson())
+    //console.log(l.toJson())
 
 
     let opts:PainterTcoOptions={

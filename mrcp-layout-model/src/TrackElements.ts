@@ -3,25 +3,31 @@ import { Layout } from "./Layout";
 
 
 
-export type t_TrackElement ={
-    id:string;
-    type:'element'|'leftTurnOut'|'rightTurnout'
-    millestone?:string
-    connections?:{[key:string]:string}
-    hints?:{[ns:string]:t_BasicHint[]}
+export type t_BaseElement = {
+    id: string;
+    type: 'element' | 'track' | 'leftTurnOut' | 'rightTurnout'
+    millestone?: string
+    hints?: { [ns: string]: t_BasicHint[] }
+    childs?: t_BaseElement[]
 }
 
-export class TrackElement{
-    
-    public constructor(layout:Layout,element:t_TrackElement){
-        this._element=element;
-        this._layout=layout;
-        this._hints={};
+export type t_TrackElement = t_BaseElement & {
+    connections?: { [key: string]: string }
+}
+
+export class BaseElement {
+    public constructor(layout: Layout, element: t_BaseElement) {
+        this._element = element;
+        this._layout = layout;
+        this._hints = {}
+
+        this._childs=[]
     }
-    
-    private _element: t_TrackElement;
-    private _layout: Layout;
-    private _hints:{[ns:string]:Hint[]}
+
+    protected _element: t_TrackElement;
+    protected _layout: Layout;
+    protected _hints: { [ns: string]: Hint[] }
+    protected _childs: BaseElement[];
 
     // Accesors
     public get id(): string {
@@ -37,28 +43,51 @@ export class TrackElement{
         this._layout = value;
     }
 
-    // methods
-    public pack():t_TrackElement{
-        this._element.hints={}
-        Object.keys(this._hints).map((ns)=>{
-            this._element.hints[ns]=[]
-            this._hints[ns].map((hint,i)=>{
-                this._element.hints[ns][i]=hint.pack();
+    public pack(): t_BaseElement {
+        this._element.hints = {}
+        
+        Object.keys(this._hints).map((ns) => {
+            this._element.hints[ns] = []
+            this._hints[ns].map((hint, i) => {
+                this._element.hints[ns][i] = hint.pack();
             })
         })
+        
         return this._element;
     }
 
-    public addHint(hint:Hint){
-        let ns= hint.ns;
-        if(this._hints[ns]==undefined)
-            this._hints[ns]=[]
+    public addHint(hint: Hint) {
+        let ns = hint.ns;
+        if (this._hints[ns] == undefined)
+            this._hints[ns] = []
         this._hints[ns].push(hint)
-        hint.element=this
+        hint.element = this
     }
 
-    public hints(ns:string):Hint[]{
+    public hints(ns: string): Hint[] {
         return this._hints[ns];
     }
 
+    public addChild(child:BaseElement){
+        this._childs.push(child)
+    }
+    public getChilds():BaseElement[]{
+        return this._childs;
+    }
+}
+export class TrackElement extends BaseElement {
+    
+    protected _connections:{ [key: string]: TrackElement }
+
+    public constructor(layout: Layout, element: t_TrackElement) {
+        super(layout, element)
+        this._connections={}
+    }
+
+    public get_connection(key:string): TrackElement {
+        return this._connections[key];
+    }
+    public addConnection(key:string,track:TrackElement) {
+        this._connections[key]=track;
+    }
 }
