@@ -80,6 +80,21 @@ function horizontalTurnout(l:Layout){
 
 }
 
+function horizontalLadder(l:Layout){
+    let turn:TrackElement=l.createElement("hl-1");
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:14,y:19}),up:false,right:true, vertical:false}))
+    
+    turn = l.createElement("hl-2");
+    turn.addHint(new TcoTurnOutHint({type:'turnOut',pos:new TcoPoint({x:19,y:19}),up:true,right:false, vertical:false}))
+
+    
+    /*step = mrcp.LadderStep(color=None,up=False,right=True)
+    panel.add(step,Point(14, 22))
+
+    step = mrcp.LadderStep(color=None,up=False,right=False)
+    panel.add(step,Point(19, 22))*/
+}
+
 function build_to_layout():Layout{
     let l = new Layout("Test Layout");
     let led = l.createElement("Led")
@@ -88,7 +103,7 @@ function build_to_layout():Layout{
     halfPartsVertical(l)
     verticalTurnout(l)
     horizontalTurnout(l)
-//    horizontalLadder()
+    horizontalLadder(l)
 //    verticalLadder()
     return l;
 }
@@ -112,10 +127,6 @@ export async function turnouts_demo():Promise<void>{
 
     panel.grid()
     panel.markStart()
-
-    //r1r4_curves(panel)
-    //vertical23(panel)
-    //horizontal23(panel)
 
 
     panel.paint(l)
